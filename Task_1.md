@@ -272,7 +272,7 @@ It has come to my attention that **`qemu`** emulator has not been installed with
 
 ```
 sudo apt install qemu-system-riscv64
-# use qemu-system-misc to install for both 32 7 64 bits
+# use qemu-system-misc to install for both 32 & 64 bits
 ```
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_22_2024 1_55_42 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f788f96f-2ace-4c12-8f14-f455dd4741a9)
 
