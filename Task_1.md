@@ -211,3 +211,25 @@ After this we expect `spike` to work properly, let us recomplie our `hello.c` & 
 
 As we can see even though the compiler is running sucessfully, & even tough `spike` has been sucessfull installed, we are facing an unexpected error. `spike` is unable to locate `pk (proxy kernal)`. I tried to search for `pk` in `usr/bin` , `/home/tejas/riscv/riscv64-unknown-elf/bin` using  `$ ls <absolute path>/pk` but was unable to find it, so I decided to download & install it seperatly.
 
+```
+$ cd riscv-gnu-toolchain
+$ git clone https://github.com/riscv/riscv-pk
+$ cd riscv-pk
+$ mkdir build
+$ cd build
+$ ../configure --prefix=/home/tejas/riscv --host=riscv64-unknown-elf --with-arch=rv64gc_zifencei
+$ make
+$ make install
+```
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 10_46_33 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/d12738a0-845f-4a1a-9bd1-e01812e14754)
+
+
+![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_21_2024 10_48_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/47eaec6e-a386-4a73-9ec4-44ea85f41aed)
+
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_04_39 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/66444b12-9295-47e1-ad25-08039bc5e009)
+
+
+
+
