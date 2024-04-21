@@ -137,6 +137,9 @@ The output of above commands
 
 With this, the installation of tools is complete, To test the RISC-V GNU Compiler Toolchain, we will write a c program `hello.c` & compile it. Also if you donot have any text editor, follow the below commands to install `vim` text editor
 
+
+## Installing vim text editor
+
 ```
 $ sudo apt update
 $ sudo apt install vim
@@ -211,6 +214,10 @@ After this we expect **`spike`** to work properly, let us recomplie our **`hello
 
 As we can see even though the compiler is running sucessfully, & even tough **`spike`** has been sucessfull installed, we are facing an unexpected error. **`spike`** is unable to locate **`pk (proxy kernal)`**. I tried to search for **`pk`** in **`usr/bin`** , **`/home/tejas/riscv/riscv64-unknown-elf/bin`** using  **`$ ls <absolute path>/pk`** but was unable to find it, so I decided to download & install it seperatly.
 
+
+
+### Installing pk (proxy kernal), to fix pk error
+
 ```
 $ cd riscv-gnu-toolchain
 $ git clone https://github.com/riscv/riscv-pk
@@ -257,6 +264,25 @@ As we can see, we have sucessfully configured the file, let us run **`$ make`** 
 
 As we can see from the above image, **`$ make`** was sucessfully executed, & even **`$ sudo make install`** was sucessful. Hence **`pk`** has been sucessfully built.
 
+<br>
 
+<br>
+
+
+### Final testing of RISC-V GNU Compiler Toolchain
+
+
+We have already verified the sucessful functionaning of compiler, now we verify the functanilty of spike & pk as shown below. 
+<br>
+Assuming you have already created **`hello.c`** as instructed in **`vim text editor`** subsection.
+
+```
+$ riscv64-unknown-elf-gcc -o hello hello.c
+$ spike pk hello
+```
+
+![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_14_52 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/36676871-8abd-425d-9602-9ca03cb7ef9e)
+
+As we can see the output !!!! *Hello world!* we can say all our tools are at last working perfectly ! 😄😭
 
 
