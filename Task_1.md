@@ -199,8 +199,7 @@ $ source ~/.bashrc
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 7_41_24 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/0cd531bd-1014-47e1-b86b-bfc782d58772)
 
 
-
-![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 7_41_50 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/5b09ccfb-0fcc-4908-8776-2a9b4556c030)
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 8_58_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/91e4af05-6dc4-4404-b9d5-1b83affbe869)
 
 
 
