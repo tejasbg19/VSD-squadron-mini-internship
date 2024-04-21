@@ -179,6 +179,10 @@ We are facing an unexpected error, system couldn't find spike, so let us install
 
 Assuming **Device Tree Compiler** is already installed, if not refer just run `$ sudo apt-get install device-tree-compiler`.
 
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 7_41_50 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/5b09ccfb-0fcc-4908-8776-2a9b4556c030)
+
+
+
 ```
 $ git clone https://github.com/riscv/riscv-isa-sim.git
 $ cd riscv-isa-sim
@@ -193,6 +197,11 @@ $ make install
 $ echo 'export PATH=/path/to/install/bin:$PATH' >> ~/.bashrc
 $ source ~/.bashrc
 ```
+
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 7_41_24 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/0cd531bd-1014-47e1-b86b-bfc782d58772)
+
+
 
 
 
