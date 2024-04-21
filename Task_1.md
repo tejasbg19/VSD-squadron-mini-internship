@@ -231,5 +231,13 @@ $ make install
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_04_39 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/66444b12-9295-47e1-ad25-08039bc5e009)
 
 
+![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_21_2024 11_10_33 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/38b14022-e996-46b3-9dda-cafaafb9354f)
+
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_11_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/6582451c-6687-498f-8c4e-2d20e0955e00)
+
+As we can see, we are facing an error while `make`, & this is due to mismatched-floating point. And it seems We need to rebuild our tool-chain from stracth 🥲🥲😓😭😭😭😭😭
+
+
 
 
