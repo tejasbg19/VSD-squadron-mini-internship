@@ -91,7 +91,13 @@ The installation can be verified as shown below
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_24_30 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1e61c1bf-b2dc-4e6c-ada7-c56b623853a9)
 
+<br> 
+<br>
+<br>
 
+## Steps to install RISC-V GNU Compiler Toolchain
+
+We will be installing the tools from the [this github repo](https://github.com/riscv-collab/riscv-gnu-toolchain), you can refer that page if you face any unexpected errors in the process. 
 
 
 
