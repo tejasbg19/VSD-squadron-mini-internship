@@ -174,6 +174,7 @@ We are facing an unexpected error, system couldn't find spike, so let us install
 <br>
 
 
+
 ### Installiong Spike, thus fixing error
 
 Assuming **Device Tree Compiler** is already installed, if not refer just run `$ sudo apt-get install device-tree-compiler`.
