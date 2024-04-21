@@ -7,7 +7,7 @@ Also we will be using **Yosys** to synthesis our RTL.
 
 ## Steps to install Yosys
 
-Assuming the `git` , `make` & `gcc` are already installed in your Ubuntu 20.04
+Assuming that `git` , `make` & `gcc` are already installed in your Ubuntu 20.04
 
 
 ```
