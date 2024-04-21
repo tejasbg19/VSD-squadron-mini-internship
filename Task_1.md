@@ -27,8 +27,9 @@ You can verify the installation of yosys as shown below
 ![openlane  Running  - Oracle VM VirtualBox 4_20_2024 11_29_35 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7a5c36b0-7832-4c81-bbd8-bda9f40f44bb)
 
 
-### Steps to install gcc 
 
+
+### Steps to install gcc 
 
 ```
 $ sudo apt update
@@ -44,7 +45,6 @@ you can verify gcc installation as shown below
 
 
 
-
 ### Steps to install git
 
 ```
@@ -53,6 +53,9 @@ $ sudo apt install git
 ```
 
 ![Tejas_B_G_vsd_mini_internship  Running  - Oracle VM VirtualBox 4_20_2024 8_34_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/0335cf76-3980-4854-9be8-cf9e56c98de0)
+
+
+
 
 
 
@@ -70,6 +73,9 @@ $ sudo apt-get -y install iverilog
 The installation can be verified as shown below
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_26_34 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2b9d8b80-7610-4459-a803-409154fa3734)
+
+
+
 
 
 
