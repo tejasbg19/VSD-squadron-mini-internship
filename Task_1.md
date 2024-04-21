@@ -160,7 +160,18 @@ int main() {
 ```
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 6_48_44 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/76dcedfe-e8ce-4030-a664-dcbfc8c56e30)
 <br> <br>
-After typing is done, press `Esc` to come back to command mode. To save and exit the file type `:wq` & press `Enter`,if you donot want to save your work, you can simply exit using `:q!`
+After typing is done, press `Esc` to come back to command mode. To save and exit the file type `:wq` & press `Enter`,if you donot want to save your work, you can simply exit using `:q!`. After this compile & simulate the file
+
+```
+$ riscv64-unknown-elf-gcc -o hello hello.c
+$ spike pk hello
+```
+
+![Screenshot 4_21_2024 6_53_40 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/cc50abc7-4e37-4a6a-bac1-53433acf1333)
+![Screenshot 4_21_2024 6_53_40 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/bf276d24-90a2-41ae-80b7-5475e45433b0)
+
+We are facing an unexpected error, system couldn't find spike, so let us install it seperatly.
+
 
 
 
