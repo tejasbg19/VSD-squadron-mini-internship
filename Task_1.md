@@ -171,7 +171,27 @@ $ spike pk hello
 ![Screenshot 4_21_2024 6_53_40 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/bf276d24-90a2-41ae-80b7-5475e45433b0)
 
 We are facing an unexpected error, system couldn't find spike, so let us install it seperatly.
+<br>
 
+
+### Installiong Spike, thus fixing error
+
+Assuming **Device Tree Compiler** is already installed, if not refer just run `$ sudo apt-get install device-tree-compiler`.
+
+```
+$ git clone https://github.com/riscv/riscv-isa-sim.git
+$ cd riscv-isa-sim
+$ mkdir build
+$ cd build
+
+#change `home/tejas/riscv` to your prefered directory
+
+$ ../configure --prefix=/home/tejas/riscv
+$ make
+$ make install
+$ echo 'export PATH=/path/to/install/bin:$PATH' >> ~/.bashrc
+$ source ~/.bashrc
+```
 
 
 
