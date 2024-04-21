@@ -246,7 +246,7 @@ $ make install
 <br>
 
 
-As we can see, we are facing an error while **`make`**, & this is due to mismatched-floating point. And it seems We need to rebuild our tool-chain from stracth 🥲🥲😓😭😭😭😭😭, let us clean `built` directory once using **`$ make clean`** & try to configure once again using the code mentioned in the above bash block as shown below.
+As we can see, we are facing an error while **`make`**, & this is due to mismatched-floating point, let us clean `built` directory once using **`$ make clean`** & try to configure once again using the code mentioned in the above bash block as shown below.
 <br>
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_58_01 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/11405a04-967f-4342-a75d-eaedb5b01d04)
@@ -268,6 +268,16 @@ As we can see from the above image, **`$ make`** was sucessfully executed, & eve
 
 <br>
 
+It has come to my attention that **`qemu`** emulator has not been installed with our earlier steps. So let's seperatly install it 
+
+### Installing qemu emulator for 64-bit processors
+
+```
+sudo apt install qemu-system-riscv64
+
+```
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_22_2024 1_55_42 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f788f96f-2ace-4c12-8f14-f455dd4741a9)
+
 
 ### Final testing of RISC-V GNU Compiler Toolchain
 
@@ -283,6 +293,9 @@ $ spike pk hello
 
 ![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_14_52 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/36676871-8abd-425d-9602-9ca03cb7ef9e)
 
-As we can see the output !!!! *Hello world!* we can say all our tools are at last working perfectly ! 😄😭
+As we can see the output !!!! *Hello world!* we can say all our tools are at last working perfectly ! Or so I thought.
+<br> <br>
+
+
 
 
