@@ -104,10 +104,14 @@ $ sudo apt update
 $ sudo apt install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev \
    libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev \ 
    libexpat-dev
+
 # Even though it is adviced in the toolchain repo to not use `--recursive` I have used it as the tools were not installed properly without it.
+
 $ git clone --recursive https://github.com/riscv-collab/riscv-gnu-toolchain  
 $ cd riscv-gnu-toolchain
+
 # Intead of `/home/tejas` give the absolute path of the directory where you want to install the tools
+
 $ ./configure --prefix=/home/tejas/riscv
 $ sudo make linux
 $ echo 'export PATH=/home/tejas/riscv/bin:$PATH' >> ~/.bashrc
