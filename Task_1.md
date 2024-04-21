@@ -202,14 +202,14 @@ $ source ~/.bashrc
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 8_58_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/91e4af05-6dc4-4404-b9d5-1b83affbe869)
 <br> <br>
 
-After this we expect `spike` to work properly, let us recomplie our `hello.c` & rerun `spike`
+After this we expect **`spike`** to work properly, let us recomplie our **`hello.c`** & rerun **`spike`**
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 9_32_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/d24928aa-031a-4e17-a25c-ef4a1a79e7cf)
 
 <br>
 
 
-As we can see even though the compiler is running sucessfully, & even tough `spike` has been sucessfull installed, we are facing an unexpected error. `spike` is unable to locate `pk (proxy kernal)`. I tried to search for `pk` in `usr/bin` , `/home/tejas/riscv/riscv64-unknown-elf/bin` using  `$ ls <absolute path>/pk` but was unable to find it, so I decided to download & install it seperatly.
+As we can see even though the compiler is running sucessfully, & even tough **`spike`** has been sucessfull installed, we are facing an unexpected error. **`spike`** is unable to locate **`pk (proxy kernal)`**. I tried to search for **`pk`** in **`usr/bin`** , **`/home/tejas/riscv/riscv64-unknown-elf/bin`** using  **`$ ls <absolute path>/pk`** but was unable to find it, so I decided to download & install it seperatly.
 
 ```
 $ cd riscv-gnu-toolchain
@@ -239,7 +239,7 @@ $ make install
 <br>
 
 
-As we can see, we are facing an error while `make`, & this is due to mismatched-floating point. And it seems We need to rebuild our tool-chain from stracth 🥲🥲😓😭😭😭😭😭, let us clean `built` directory once using `$ make clean` & try to configure once again using the code mentioned above bash block as shown below.
+As we can see, we are facing an error while **`make`**, & this is due to mismatched-floating point. And it seems We need to rebuild our tool-chain from stracth 🥲🥲😓😭😭😭😭😭, let us clean `built` directory once using **`$ make clean`** & try to configure once again using the code mentioned in the above bash block as shown below.
 <br>
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_58_01 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/11405a04-967f-4342-a75d-eaedb5b01d04)
@@ -255,7 +255,7 @@ As we can see, we have sucessfully configured the file, let us run **`$ make`** 
 ![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_02_51 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/49b0e338-010f-47cb-861a-8085422a718a)
 
 
-As we can see from the above image, **`$ make`** was sucessfully executed, & even `$ sudo make install` was sucessful. Hence `pk` has been sucessfully built.
+As we can see from the above image, **`$ make`** was sucessfully executed, & even **`$ sudo make install`** was sucessful. Hence **`pk`** has been sucessfully built.
 
 
 
