@@ -257,7 +257,6 @@ As we can see, we have sucessfully configured the file, let us run **`$ make`** 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_59_22 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/ee4d086e-9d79-4aa9-8e5a-fdd2db60b5cd)
 
 <br>
-<br>
 
 ![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_02_51 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/49b0e338-010f-47cb-861a-8085422a718a)
 
@@ -266,9 +265,8 @@ As we can see from the above image, **`$ make`** was sucessfully executed, & eve
 
 <br>
 
-<br>
-
 It has come to my attention that **`qemu`** emulator has not been installed with our earlier steps. So let's seperatly install it 
+
 
 ### Installing qemu emulator for 64-bit processors
 
