@@ -236,7 +236,26 @@ $ make install
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_11_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/6582451c-6687-498f-8c4e-2d20e0955e00)
 
-As we can see, we are facing an error while `make`, & this is due to mismatched-floating point. And it seems We need to rebuild our tool-chain from stracth 🥲🥲😓😭😭😭😭😭
+<br>
+
+
+As we can see, we are facing an error while `make`, & this is due to mismatched-floating point. And it seems We need to rebuild our tool-chain from stracth 🥲🥲😓😭😭😭😭😭, let us clean `built` directory once using `$ make clean` & try to configure once again using the code mentioned above bash block as shown below.
+<br>
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_58_01 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/11405a04-967f-4342-a75d-eaedb5b01d04)
+<br> <br>
+
+
+As we can see, we have sucessfully configured the file, let us run **`$ make`** command as shown below.
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 11_59_22 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/ee4d086e-9d79-4aa9-8e5a-fdd2db60b5cd)
+
+<br>
+<br>
+
+![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_02_51 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/49b0e338-010f-47cb-861a-8085422a718a)
+
+
+As we can see from the above image, **`$ make`** was sucessfully executed, & even `$ sudo make install` was sucessful. Hence `pk` has been sucessfully built.
 
 
 
