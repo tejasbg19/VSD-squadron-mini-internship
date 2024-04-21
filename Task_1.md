@@ -209,5 +209,5 @@ After this we expect `spike` to work properly, let us recomplie our `hello.c` & 
 <br>
 
 
-As we can see even though the compiler is running sucessfully, & even tough `spike` has been sucessfull installed, we are facing an unexpected error. `spike` is unable to locate `pk (proxy kernal)`.
+As we can see even though the compiler is running sucessfully, & even tough `spike` has been sucessfull installed, we are facing an unexpected error. `spike` is unable to locate `pk (proxy kernal)`. I tried to search for `pk` in `usr/bin` , `/home/tejas/riscv/riscv64-unknown-elf/bin` using  `$ ls <absolute path>/pk` but was unable to find it, so I decided to download & install it seperatly.
 
