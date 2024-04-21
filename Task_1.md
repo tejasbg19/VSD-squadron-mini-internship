@@ -120,6 +120,7 @@ $ sudo apt-get install python3-pyelftools
 ```
 
 The output of above commands
+
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 3_28_49 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/e7f48a8d-7370-424f-81b2-667ec5b66648)
 
 
@@ -127,6 +128,39 @@ The output of above commands
 
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_05_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/cb3ac9de-3399-441e-999c-cc416ba2ab33)
+
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_05_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/e9ba9e52-1cba-474a-b79b-2b7f7f187cf5)
+
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_05_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a6125c9a-06f4-4285-b04f-ef9cda00d4ec)
+
+With this, the installation of tools is complete, To test the RISC-V GNU Compiler Toolchain, we will write a c program `hello.c` & compile it. Also if you donot have any text editor, follow the below commands to install `vim` text editor
+
+```
+$ sudo apt update
+$ sudo apt install vim
+```
+
+Once `vim` is installed, navigate to your desired directory an create `hello.c` as shown below
+```
+$ cd Documents
+$ vim hello.c
+```
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 6_48_34 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/3918e88b-59fa-4cdb-b2b4-8d4991f2fa54)
+<br><br>
+inside the `vim` press `i` to start inserting text and type the below code
+```
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 6_48_44 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/76dcedfe-e8ce-4030-a664-dcbfc8c56e30)
+<br> <br>
+After typing is done, press `Esc` to come back to command mode. To save and exit the file type `:wq` & press `Enter`,if you donot want to save your work, you can simply exit using `:q!`
 
 
 
