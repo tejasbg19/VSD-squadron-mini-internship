@@ -22,4 +22,31 @@ $ make
 $ sudo make install
 ```
 
+You can verify the installation of yosys as shown below
+
+![openlane  Running  - Oracle VM VirtualBox 4_20_2024 11_29_35 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7a5c36b0-7832-4c81-bbd8-bda9f40f44bb)
+
+
+### Steps to install gcc 
+
+
+```
+$ sudo apt update
+$ sudo apt install gcc
+```
+
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_20_2024 11_48_18 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/d511cc76-c5a7-41e6-895d-ca528712243b)
+
+
+### Steps to install git
+
+```
+$ sudo apt update
+$ sudo apt install git
+```
+
+![Tejas_B_G_vsd_mini_internship  Running  - Oracle VM VirtualBox 4_20_2024 8_34_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/0335cf76-3980-4854-9be8-cf9e56c98de0)
+
+
+
 
