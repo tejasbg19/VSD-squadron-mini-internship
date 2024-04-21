@@ -122,9 +122,11 @@ $ sudo apt-get install python3-pyelftools
 The output of above commands
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 3_28_49 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/e7f48a8d-7370-424f-81b2-667ec5b66648)
 
+
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 3_29_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/94884629-533a-470a-ac5c-af8ea534e21f)
 
 
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_05_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/cb3ac9de-3399-441e-999c-cc416ba2ab33)
 
 
 
