@@ -207,5 +207,7 @@ After this we expect `spike` to work properly, let us recomplie our `hello.c` & 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 9_32_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/d24928aa-031a-4e17-a25c-ef4a1a79e7cf)
 
 <br>
+
+
 As we can see even though the compiler is running sucessfully, & even tough `spike` has been sucessfull installed, we are facing an unexpected error. `spike` is unable to locate `pk (proxy kernal)`.
 
