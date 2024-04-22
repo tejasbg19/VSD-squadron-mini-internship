@@ -181,9 +181,9 @@ We are facing an unexpected error, system couldn't find spike, so let us install
 
 
 
-### Installiong Spike, thus fixing error
+### Installing Spike, thus fixing error
 
-Assuming **Device Tree Compiler** is already installed, if not refer just run `$ sudo apt-get install device-tree-compiler`.
+Assuming **Device Tree Compiler** is already installed, if not just run `$ sudo apt-get install device-tree-compiler`.
 
 
 ```
@@ -264,7 +264,7 @@ As we can see, we have sucessfully configured the file, let us run **`$ make`** 
 ![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_02_51 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/49b0e338-010f-47cb-861a-8085422a718a)
 
 
-As we can see from the above image, **`$ make`** was sucessfully executed, & even **`$ sudo make install`** was sucessful. Hence **`pk`** has been sucessfully built.
+As we can see from the above image, **`$ make`** was sucessfully executed, & even **`$ sudo make install`** was successful. Hence **`pk`** has been sucessfully built.
 
 <br>
 
@@ -278,6 +278,9 @@ sudo apt install qemu-system-riscv64
 # use qemu-system-misc to install for both 32 & 64 bits
 ```
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_22_2024 1_55_42 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f788f96f-2ace-4c12-8f14-f455dd4741a9)
+
+The above image also shows how i have verified the installation of qemu.
+
 
 
 ### Final testing of RISC-V GNU Compiler Toolchain
