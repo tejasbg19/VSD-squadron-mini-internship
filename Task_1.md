@@ -87,9 +87,12 @@ $ sudo apt update
 $ sudo apt install gtkwave
 ```
 
-The installation can be verified as shown below
-
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_24_30 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1e61c1bf-b2dc-4e6c-ada7-c56b623853a9)
+
+
+The installation can be verified as shown below
+![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_22_2024 10_17_50 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a442363c-21db-4535-a462-064f1deb9050)
+
 
 <br> 
 <br>
