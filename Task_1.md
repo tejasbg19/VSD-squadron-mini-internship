@@ -297,8 +297,7 @@ $ spike pk hello
 
 ![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_14_52 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/36676871-8abd-425d-9602-9ca03cb7ef9e)
 
-As we can see the output !!!! *Hello world!* we can say all our tools are at last working perfectly ! Or so I thought.
-<br> <br>
+As we can see the output !!!! *Hello world!* we can say all our tools are at last working perfectly ! 
 
 
 
