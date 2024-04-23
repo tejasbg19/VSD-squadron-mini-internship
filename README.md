@@ -1,5 +1,8 @@
 # VSD-squadron-mini-internship
 
+
+**Task-1** is to install all the necessary tools . [Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_1.md) to know about all the tools we need and instructions to install them.
+
 # Task-1 : Installing & Setting Up The Tools
 
 In this program we will be using **RISC-V GNU Compiler Toolchain** to compile our c programs into risc v instructions. 
