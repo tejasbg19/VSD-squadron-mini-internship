@@ -11,15 +11,8 @@ Assuming that `git` , `make` & `gcc` are already installed in your Ubuntu 20.04
 
 
 ```
-$ git clone https://github.com/YosysHQ/yosys.git
-$ cd yosys
-$ sudo apt-get install build-essential clang bison flex \
-    libreadline-dev gawk tcl-dev libffi-dev git \
-    graphviz xdot pkg-config python3 libboost-system-dev \
-    libboost-python-dev libboost-filesystem-dev zlib1g-dev
-$ make config-gcc
-$ make 
-$ sudo make install
+$ sudo apt update
+$ sudo apt install yosys
 ```
 
 You can verify the installation of yosys as shown below
@@ -107,19 +100,22 @@ $ sudo apt update
 $ sudo apt install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev \
    libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev \ 
    libexpat-dev
-
+$ sudo apt-get install python3-pyelftools
 # Even though it is adviced in the toolchain repo to not use `--recursive` I have used it as the tools were not installed properly without it.
-
-$ git clone --recursive https://github.com/riscv-collab/riscv-gnu-toolchain  
+$ git clone --recurse-submodules https://github.com/riscv/riscv-gnu-toolchain  
 $ cd riscv-gnu-toolchain
-
-# Intead of `/home/tejas` give the absolute path of the directory where you want to install the tools
-
-$ ./configure --prefix=/home/tejas/riscv
-$ sudo make linux
+$ export RISCV=/home/tejas/Desktop/internship/riscv
+# Intead of `/home/tejas?Desktop/internship/riscv` give the absolute path of the directory where you want to install the tools
+# Configuring 32-bit tools
+$ ./configure --prefix=$RISCV --with-arch=rv32imac --with-abi=ilp32
+$ make -j$(nproc)
+$ make install
+# Configuring 64-bits tools
+$ ./configure --prefix=$RISCV --with-arch=rv64imac --with-abi=lp64
+$ make -j$(nproc)
+$ make install
 $ echo 'export PATH=/home/tejas/riscv/bin:$PATH' >> ~/.bashrc
 $ source ~/.bashrc
-$ sudo apt-get install python3-pyelftools
 ```
 
 The output of above commands
