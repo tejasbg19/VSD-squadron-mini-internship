@@ -96,24 +96,39 @@ The installation can be verified as shown below
 We will be installing the tools from the [this github repo](https://github.com/riscv-collab/riscv-gnu-toolchain), you can refer that page if you face any unexpected errors in the process. 
 
 ```
+# Prerequisites before we clone
 $ sudo apt update
 $ sudo apt install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev \
    libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev \ 
    libexpat-dev
 $ sudo apt-get install python3-pyelftools
+
+
 # Even though it is adviced in the toolchain repo to not use `--recursive` I have used it as the tools were not installed properly without it.
 $ git clone --recurse-submodules https://github.com/riscv/riscv-gnu-toolchain  
 $ cd riscv-gnu-toolchain
 $ export RISCV=/home/tejas/Desktop/internship/riscv
-# Intead of `/home/tejas?Desktop/internship/riscv` give the absolute path of the directory where you want to install the tools
+# Intead of `/home/tejas/Desktop/internship/riscv` give the absolute path of the directory where you want to install the tools
+
+
 # Configuring 32-bit tools
 $ ./configure --prefix=$RISCV --with-arch=rv32imac --with-abi=ilp32
 $ make -j$(nproc)
 $ make install
+# Above code only sets up riscv32-unknown-elf but not riscv32-unknown-linux-gnu so follow below code to set it up
+$ ./configure --prefix=/opt/riscv --with-arch=rv32gc --with-abi=ilp32d
+$ make linux
+
+
 # Configuring 64-bits tools
 $ ./configure --prefix=$RISCV --with-arch=rv64imac --with-abi=lp64
 $ make -j$(nproc)
 $ make install
+# If above 64-bit command only creats riscv-unknown-elf but not riscv64-unknown-linux-gnu follow below commands to set it up
+$ ./configure --prefix=$RISCV
+$ make linux
+
+# To universally access the tools from anywhere
 $ echo 'export PATH=/home/tejas/riscv/bin:$PATH' >> ~/.bashrc
 $ source ~/.bashrc
 ```
