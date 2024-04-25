@@ -116,15 +116,18 @@ $ ./configure --prefix=$RISCV --with-arch=rv32imac --with-abi=ilp32
 $ make -j$(nproc)
 $ make install
 # Above code only sets up riscv32-unknown-elf but not riscv32-unknown-linux-gnu so follow below code to set it up
+$ make clean
 $ ./configure --prefix=/opt/riscv --with-arch=rv32gc --with-abi=ilp32d
 $ make linux
 
 
 # Configuring 64-bits tools
+$ make clean
 $ ./configure --prefix=$RISCV --with-arch=rv64imac --with-abi=lp64
 $ make -j$(nproc)
 $ make install
 # If above 64-bit command only creats riscv-unknown-elf but not riscv64-unknown-linux-gnu follow below commands to set it up
+$ make clean
 $ ./configure --prefix=$RISCV
 $ make linux
 
