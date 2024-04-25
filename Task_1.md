@@ -319,6 +319,7 @@ Assuming you have already created **`hello.c`** as instructed in **`vim text edi
 ```
 $ riscv64-unknown-elf-gcc -o hello hello.c
 $ spike pk hello
+$ qemu-system-riscv64 -machine virt -nographic -bios default -kernel hello
 ```
 
 ![Editing VSD-squadron-mini-internship_Task_1 md at main · tejasbg19_VSD-squadron-mini-internship - Google Chrome 4_22_2024 12_14_52 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/36676871-8abd-425d-9602-9ca03cb7ef9e)
