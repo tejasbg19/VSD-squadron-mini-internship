@@ -295,11 +295,14 @@ sudo apt install qemu-system-riscv64
 or
 
 ```
-git clone https://git.qemu.org/git/qemu.git
-cd qemu
-./configure --target-list=riscv64-softmmu,riscv32-softmmu
-make -j $(nproc)
-sudo make install
+$ git clone https://git.qemu.org/git/qemu.git
+$ cd qemu
+$ ./configure --target-list=riscv64-softmmu,riscv32-softmmu
+$ make -j $(nproc)
+$ sudo make install
+$ echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.bashrc
+$ source ~/.bashrc
+
 ```
 
 
