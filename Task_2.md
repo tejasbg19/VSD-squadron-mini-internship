@@ -37,7 +37,7 @@ We can classify the base integer ISA into 6 types:
 - **syntax:**
 
 
-| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |  bits  
+| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
 |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
 | funct7|  rs2  |  rs1  | funct3|  rd  |opcode|
 
@@ -49,12 +49,21 @@ We can classify the base integer ISA into 6 types:
 - **syntax:**
 
 
-| 31 20 | 19-15 | 14-12 | 11-7 | 6-0 |   bits
+| 31-20 | 19-15 | 14-12 | 11-7 | 6-0 |   bits
 |:----------:|:-----:|:-----:|:----:|:---:|
 | imm [11:0] |  rs1  | funct3|  rd  |opcode|
+
             
 
+### 3.  **S-Type (Store Type):** 
 
+- S-type of instructions are used to store data froma register into memory.
+- **syntax:**
+
+
+| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+|:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+| imm[11:5]|  rs2  |  rs1  | funct3|  imm[4:0]  |opcode|
 
 
 
