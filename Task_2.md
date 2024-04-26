@@ -94,12 +94,12 @@ We can classify the base integer ISA into 6 types:
 - **syntax:**
 
 
-| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
-|:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+| 31-12 | 11-7 | 6-0 |    
+|:-----:|:-----:|:-----:|
 |  imm[31:12]|   rd |opcode|
 
 
--lui rd, imm (load upper immediate)
+-eg: lui rd, imm (load upper immediate)
 
 
 
