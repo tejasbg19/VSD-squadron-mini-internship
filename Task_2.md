@@ -190,4 +190,9 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
 
 12.  sll r15,r1,r2(2) : <br>
       
-      
+      The above given instruction is a **`Logical Left Shift`** operator, where the contentents of source1 register r1 is shifted by content of  `r2*2`. And the result is stored in destination register r15.
+
+
+13. srl r16,r14,r2(2) : <br>
+   The above given instruction is a **`Logical Right Shift`** operator, where the contentents of source1 register r14 is shifted by content of  `r2*2`. And the result is stored in destination register r16.
+
