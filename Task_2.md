@@ -121,7 +121,16 @@ We can classify the base integer ISA into 6 types:
 -eg: jal rd, offset (jump and link)
 
 
+<br>
 
+## The Opcodes for opperations:
+
+The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official **[riscv website]**(https://riscv.org/technical/specifications/) 
+
+# The Task:
+
+
+1.  
 
 
 
