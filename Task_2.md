@@ -119,23 +119,18 @@ We can classify the base integer ISA into 6 types:
 -eg: jal rd, offset (jump and link)
 <br>
 
-It is alos important to note thta The RISC-V ISA keeps the source (rs1 and rs2) and destination (rd) registers at the same position
-in all formats to simplify decoding. Except for the 5-bit immediates used in CSR (control & status register) instructions
+It is also important to note that the ***RISC-V ISA keeps the source (rs1 and rs2) and destination (rd) registers at the same position
+in all formats*** to simplify decoding. Except for the 5-bit immediates used in CSR (control & status register) instructions.
 
 <br> <br>
 Syntax for all instructions at one place.
 ![Screenshot (445)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1fd56bbd-f8a0-48c0-83f4-d0c5a86ebaef)
 Source: The PDF volume1 Unprivilaged riscv ISA.
-<span style="font-size: larger;">Your text here</span>
-
-
-
-
 
 
 <br>
 
-## The Opcodes for opperations:
+## The Opcodes for operations:
 
 The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) in volume1, unprivilaged PDF.
 
@@ -144,12 +139,12 @@ The below opcode table gives us the corresponting binary code for a specific ope
 Source: The PDF volume1 Unprivilaged riscv ISA.
 
 
-
+<br>
 
 # The Task: identifying the instruction types.
 
 
-1.  
+1.  add r6,r2,r1
 
 
 
