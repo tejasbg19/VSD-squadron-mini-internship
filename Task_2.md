@@ -125,9 +125,9 @@ We can classify the base integer ISA into 6 types:
 
 ## The Opcodes for opperations:
 
-The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) 
+The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) in volume1, unprivilaged PDF.
 
-# The Task:
+# The Task: identifying the codes 
 
 
 1.  
