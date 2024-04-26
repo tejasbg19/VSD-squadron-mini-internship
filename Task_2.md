@@ -34,9 +34,10 @@ We can classify the base integer ISA into 6 types:
 ### 1.  **R-Type (Register Type):** 
 
 - R-type instructions operate on the data within the source registers, and typicall arithmeic, logical & shifting operations can be performed in this formate.
-- **syntax:**    |31 30 |25 24 |21 20 |19 15 |14 12 |11  7 |6 0|
-                 |:----:|:----:|:---:|:------:|:------:|:-----:|:------:| 
-                 |funct7 |rs2 |rs1 |funct3 |rd |opcod|
+- **syntax:**    | 31 30 | 25 24 | 21 20 | 19 15 | 14 12 | 11  7 |  6  0 |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| funct7|   rs2 |   rs1 | funct3|    rd | opcode|       |
+
 
 
 
