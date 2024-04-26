@@ -45,6 +45,7 @@ We can classify the base integer ISA into 6 types:
 -eg: add rd, rs1, rs2 (addition operation)
 
 
+<br>
 
 ### 2.  **I-Type (Immediate Type):** 
 
@@ -72,6 +73,7 @@ We can classify the base integer ISA into 6 types:
 -eg: add rd, rs1, rs2 (addition operation)
 
 
+<br>
 
 ### 4.  **B-Type (Branch Type):** 
 
@@ -87,6 +89,7 @@ We can classify the base integer ISA into 6 types:
 -eg: beq rs1, rs2, offset (branch equal)
 
 
+<br>
 
 
 ### 5.  **U-Type (Upper Immediate Type):** 
@@ -102,7 +105,7 @@ We can classify the base integer ISA into 6 types:
 
 -eg: lui rd, imm (load upper immediate)
 
-
+<br>
 
 
 ### 6.  **J-Type (Jump Type):** 
