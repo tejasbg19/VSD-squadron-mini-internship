@@ -24,8 +24,6 @@ To complete this task we first need to understand 32-bit RISC V (**RV32I**) inst
 Source: A screenshot from Wikipedia
 
 
-It is alos important to note thta The RISC-V ISA keeps the source (rs1 and rs2) and destination (rd) registers at the same position
-in all formats to simplify decoding. Except for the 5-bit immediates used in CSR (control & status register) instructions
 
 ## The Classes:
 
@@ -119,6 +117,20 @@ We can classify the base integer ISA into 6 types:
 | imm[20]|  imm[10:1]  |  lmm11 | imm[19:12]|  rd  |opcode|
 
 -eg: jal rd, offset (jump and link)
+<br>
+
+It is alos important to note thta The RISC-V ISA keeps the source (rs1 and rs2) and destination (rd) registers at the same position
+in all formats to simplify decoding. Except for the 5-bit immediates used in CSR (control & status register) instructions
+
+<br> <br>
+Syntax for all instruction at one place.
+![Screenshot (445)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1fd56bbd-f8a0-48c0-83f4-d0c5a86ebaef)
+Source: The PDF volume1 Unprivilaged riscv ISA.
+
+
+
+
+
 
 
 <br>
@@ -127,7 +139,13 @@ We can classify the base integer ISA into 6 types:
 
 The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) in volume1, unprivilaged PDF.
 
-# The Task: identifying the codes 
+![Screenshot (444)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/e5eb7705-3a01-41cc-9962-734df0d93622)
+Source: The PDF volume1 Unprivilaged riscv ISA.
+
+
+
+
+# The Task: identifying the instruction types.
 
 
 1.  
