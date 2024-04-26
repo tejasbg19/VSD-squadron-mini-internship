@@ -145,11 +145,49 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
 
 
 1.  add r6,r2,r1 : <br>
-    The above instruction is a *R-type* base instruction formate as the registers *r1* & *r2* which contain the data are being passed as operand for the *operation addition*. while the result will be stored in destination register *r6*.
+    The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r2* which contain the data that are being passed as operand for the **`operation of addition`**. while the result will be stored in destination register *r6*.
 
 
 2.  sub r7,r1,r2 :<br>
-    The above instruction is a *
+   The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r2* which contain the data that will be passed as operand for the **`operation of subtraction`**. while the result will be stored in destination register *r7*.
 
 
+3.  and r8,r1,r3 :<br>
+      The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r3* which contain the data that will be passed as operand for **`Bitwise Logical AND operation`**. while the result will be stored in destination register *r8*.
 
+
+4.  or r9,r2,r5 : <br>
+    The above instruction is a **`R-type`** base instruction formate as the registers *r2* & *r5* which contain the data that will be passed as operand for **`Bitwise Logical OR operation`**. while the result will be stored in destination register *r9*.
+
+
+5.  xor r10,r1,r4 : <br>
+      The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r4* which contain the data that will be passed as operand for **`Bitwise Logical OR operation`**. while the result will be stored in destination register *r10*.
+
+
+6.  slt r11,r2,r4 :<br>
+     The above instruction is a **`R-type`** base instruction formate as the registers *r2* & *r4* which contain the data that will be passed as operand for **`Set less than (Magnitude Comparision)`**. while the result will be stored in destination register *r11*. If `r2<r4 implies r11=1 else r11=0 `
+
+
+7.  addi r12,r4,5 :<br>
+       The above instruction is a **`I-type`** base instruction formate as a immediate value **`5 will be added to r4`** and the result will be stored in destination register *r12*. 
+
+
+8.  sw r3,r1,2 :<br>
+    The above instruction is a **`S-type`** base instruction formate and the opcode `store word` specifies to **`move/save the 32-bit content of source register r3 to the memory location whose base address = r1 with an offset 2`**.
+
+
+9.  lw r13,r1,2 :<br>
+     The above instruction is a **`S-type`** base instruction formate and the opcode `load word` specifies to **`load the 32-bit content of the memory location whose base address = r1 + offset 2 into the destination register r13`**.
+
+
+10.  beq  r0,r0,15 : <br>
+      The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is equal to source2 register r0 then branch to instructions at memory location 15 instructions ahead of current instruction`**.
+
+
+11. bne r0,r1,20 : <br>
+     The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is not equal to source2 register r1 then branch to instructions at memory location 20 instructions ahead of current instruction.`**.
+
+
+12.  sll r15,r1,r2(2) : <br>
+      
+      
