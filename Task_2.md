@@ -123,10 +123,10 @@ It is alos important to note thta The RISC-V ISA keeps the source (rs1 and rs2) 
 in all formats to simplify decoding. Except for the 5-bit immediates used in CSR (control & status register) instructions
 
 <br> <br>
-Syntax for all instruction at one place.
+Syntax for all instructions at one place.
 ![Screenshot (445)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1fd56bbd-f8a0-48c0-83f4-d0c5a86ebaef)
 Source: The PDF volume1 Unprivilaged riscv ISA.
-
+<span style="font-size: larger;">Your text here</span>
 
 
 
