@@ -144,8 +144,12 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
 # The Task: identifying the instruction types.
 
 
-1.  add r6,r2,r1
-    The above instruction is a *R-type* base instruction formate as the registers *r1* & *r2* which contain the data are being passed as operand for the operation addition. while the result will be stored in destination register *r6*.
+1.  add r6,r2,r1 : <br>
+    The above instruction is a *R-type* base instruction formate as the registers *r1* & *r2* which contain the data are being passed as operand for the *operation addition*. while the result will be stored in destination register *r6*.
+
+
+2.  sub r7,r1,r2 :<br>
+    The above instruction is a *
 
 
 
