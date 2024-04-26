@@ -41,6 +41,8 @@ We can classify the base integer ISA into 6 types:
 |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
 | funct7|  rs2  |  rs1  | funct3|  rd  |opcode|
 
+-eg: add rd, rs1, rs2 (addition operation)
+
 
 
 ### 2.  **I-Type (Immediate Type):** 
@@ -49,11 +51,11 @@ We can classify the base integer ISA into 6 types:
 - **syntax:**
 
 
-| 31-20 | 19-15 | 14-12 | 11-7 | 6-0 |   bits
+| 31-20 | 19-15 | 14-12 | 11-7 | 6-0 |  
 |:----------:|:-----:|:-----:|:----:|:---:|
 | imm [11:0] |  rs1  | funct3|  rd  |opcode|
 
-            
+-eg: add rd, rs1, rs2 (addition operation)             
 
 ### 3.  **S-Type (Store Type):** 
 
@@ -66,6 +68,38 @@ We can classify the base integer ISA into 6 types:
 | imm[11:5]|  rs2  |  rs1  | funct3|  imm[4:0]  |opcode|
 
 
+-eg: add rd, rs1, rs2 (addition operation)
+
+
+
+### 4.  **B-Type (Branch Type):** 
+
+- This is like a loop in c, which iterates based on a condition.
+- **syntax:**
+
+
+| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+|:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+| imm[12] imm[10:5]|  rs2  |  rs1  | funct3|  imm[4:1] [11]  |opcode|
+
+
+-eg: beq rs1, rs2, offset (branch equal)
+
+
+
+
+### 5.  **U-Type (Upper Immediate Type):** 
+
+- This type of instruction is used to LOAD large constants/values into a register.
+- **syntax:**
+
+
+| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+|:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+|  imm[31:12]|   rd |opcode|
+
+
+-lui rd, imm (load upper immediate)
 
 
 
