@@ -31,6 +31,7 @@ in all formats to simplify decoding. Except for the 5-bit immediates used in CSR
 
 We can classify the base integer ISA into 6 types:
 
+
 ### 1.  **R-Type (Register Type):** 
 
 - R-type instructions operate on the data within the source registers, and typicall arithmeic, logical & shifting operations can be performed in this formate.
