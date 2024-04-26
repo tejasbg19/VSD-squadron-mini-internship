@@ -139,7 +139,8 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
 
 The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) in volume1, unprivilaged PDF.
 
-![Screenshot (444)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/e5eb7705-3a01-41cc-9962-734df0d93622)
+![Screenshot (444)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/38908e80-3139-483c-bd7f-09bc8cc29317)
+
 Source: The PDF volume1 Unprivilaged riscv ISA.
 
 
