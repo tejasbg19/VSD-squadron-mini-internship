@@ -104,4 +104,20 @@ We can classify the base integer ISA into 6 types:
 
 
 
+### 6.  **J-Type (Jump Type):** 
+
+- J-Type instructions are used for unconditional jumping to a target address.
+- **syntax:**
+
+
+| 31-25 | 24-20 | 19-12 | 11-7 | 6-0 |    
+|:-----:|:-----:|:--------:|:----:|:---:|
+| imm[20]|  imm[10:1]  |  lmm11 | imm[19:12]|  rd  |opcode|
+
+-eg: jal rd, offset (jump and link)
+
+
+
+
+
 
