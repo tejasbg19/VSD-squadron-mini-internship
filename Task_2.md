@@ -37,11 +37,21 @@ We can classify the base integer ISA into 6 types:
 - **syntax:**
 
 
-| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |
+| 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |  bits  
 |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
 | funct7|  rs2  |  rs1  | funct3|  rd  |opcode|
 
 
+
+### 2.  **I-Type (Immediate Type):** 
+
+- I-type instructions operate on immediate values in their operation, and typicall arithmeic & load operations can use this formate.
+- **syntax:**
+
+
+| 31 20 | 19-15 | 14-12 | 11-7 | 6-0 |   bits
+|:----------:|:-----:|:-----:|:----:|:---:|
+| imm [11:0] |  rs1  | funct3|  rd  |opcode|
             
 
 
