@@ -28,8 +28,6 @@ To complete this task we first need to understand 32-bit RISC V (**RV32I**) inst
 <br>
 
 
-![Screenshot (443)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/ca09ea17-a7c5-417a-a610-4953d962e3b7)
-Source: A screenshot from Wikipedia
 
 
 
