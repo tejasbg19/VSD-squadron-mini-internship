@@ -219,27 +219,61 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
    - RV32I instruction is `000000000101 00100 000 01100 0010011`
 
 
-9.  sw r3,r1,2 :<br>
-    The above instruction is a **`S-type`** base instruction formate and the opcode `store word` specifies to **`move/save the 32-bit content of source register r3 to the memory location whose base address = r1 with an offset 2`**.
+8.  sw r3,r1,2 :
+   - The above instruction is a **`S-type`** base instruction formate and the opcode `store word` specifies to **`move/save the 32-bit content of source register r3 to the memory location whose base address = r1 with an offset 2`**.
+   - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+    |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+    | imm[11:5]|  rs2  |  rs1  | funct3|  imm[4:0]  |opcode|
+     |0000000 |00001 |00011 |010 |00010 |0100011|    
+   -  RV32I instruction is `0000000 00001 00011 010 00010 0100011`
 
 
-10.  lw r13,r1,2 :<br>
-     The above instruction is a **`S-type`** base instruction formate and the opcode `load word` specifies to **`load the 32-bit content of the memory location whose base address = r1 + offset 2 into the destination register r13`**.
+9.  lw r13,r1,2 :
+     - The above instruction is a **`S-type`** base instruction formate and the opcode `load word` specifies to **`load the 32-bit content of the memory location whose base address = r1 + offset 2 into the destination register r13`**.
+     - | 31-25 20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+      |:-----:|:-----:|:-----:|:-----:|:-------:
+      | imm[11:0]  |  rs1  | funct3|  imm[4:0]  |opcode|
+       |000000000010 | 00001 |010| 01101| 0000011|     
+     -  RV32I instruction is `000000000010 00001 010 01101 0000011`
+
+     
 
 
-11.  beq  r0,r0,15 : <br>
-      The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is equal to source2 register r0 then branch to instructions at memory location 15 instructions ahead of current instruction`**.
+10.  beq  r0,r0,15 :
+     -  The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is equal to source2 register r0 then branch to instructions at memory location 15 instructions ahead of current instruction`**.
+     - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+       |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+      | imm[12] imm[10:5]|  rs2  |  rs1  | funct3|  imm[4:1] [11]  |opcode|
+      | 0000000 000 |00000 |00000 |000 | 1111 |1100011|
+
+     -  RV32I instruction is `00000 000 00000 00000 000 1111 1100011`
 
 
-12. bne r0,r1,20 : <br>
-     The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is not equal to source2 register r1 then branch to instructions at memory location 20 instructions ahead of current instruction.`**.
+13. bne r0,r1,20 :
+-  The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is not equal to source2 register r1 then branch to instructions at memory location 20 instructions ahead of current instruction.`**.
+- | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+   |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+  | imm[12] imm[10:5]|  rs2  |  rs1  | funct3|  imm[4:1] [11]  |opcode|
+   |0000000 00001 |00000 |00001 |001 |0100 |1100011|
+-  RV32I instruction is `0000000 00001 00000 00001 001 0100 1100011`
 
 
-13.  sll r15,r1,r2(2) : <br>
-      
-      The above given instruction is a **`Logical Left Shift`** operator, where the contentents of source1 register r1 is shifted by content of  `r2*2`. And the result is stored in destination register r15.
 
+15.  sll r15,r1,r2(2) :
+     - The above given instruction is a **`Logical Left Shift`** operator and uses register, hence a **R-type**, where the contentents of source1 register r1 is shifted by content of  `r2*2`. And the result is stored in destination register r15.
+     - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+       |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+        | funct7|  rs2  |  rs1  | funct3|  rd  |opcode|
+        |0000000 |00010 |00001 |001 |01111 |0110011|
+     -  RV32I instruction is `0000000 00100 00001 001 01111 0110011`
 
-14. srl r16,r14,r2(2) : <br>
-   The above given instruction is a **`Logical Right Shift`** operator, where the contentents of source1 register r14 is shifted by content of  `r2*2`. And the result is stored in destination register r16.
+    
 
+17. srl r16,r14,r2(2) :
+    -  The above given instruction is a **`Logical Right Shift`** operator and uses register, hence a **R-type**, where the contentents of source1 register r14 is shifted by content of  `r2*2`. And the result is stored in destination register r16.
+
+    - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |    
+       |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+        | funct7|  rs2  |  rs1  | funct3|  rd  |opcode|
+        |0000000 |00010 |01110 |101 |01111 |0110011|
+    -  RV32I instruction is `0000000 00010 01110 101 01111 0110011`
