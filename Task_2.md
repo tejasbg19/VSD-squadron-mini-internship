@@ -190,39 +190,56 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
 
     - RV32I instruction is `0000000 00101 00010 110 01001 0110011`
 
-9.  xor r10,r1,r4 : <br>
-      The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r4* which contain the data that will be passed as operand for **`Bitwise Logical OR operation`**. while the result will be stored in destination register *r10*.
+5.  xor r10,r1,r4 :
+    - The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r4* which contain the data that will be passed as operand for **`Bitwise Logical OR operation`**. while the result will be stored in destination register *r10*.
+    - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |
+      |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+      | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
+      | 0000000| 00100| 00001| 100| 01010| 0110011|
+
+    -  RV32I instruction is `0000000 00100 00001 100 01010 0110011`
 
 
-10.  slt r11,r2,r4 :<br>
-     The above instruction is a **`R-type`** base instruction formate as the registers *r2* & *r4* which contain the data that will be passed as operand for **`Set less than (Magnitude Comparision)`**. while the result will be stored in destination register *r11*. If `r2<r4 implies r11=1 else r11=0 `
+6.  slt r11,r2,r4 :
+   - The above instruction is a **`R-type`** base instruction formate as the registers *r2* & *r4* which contain the data that will be passed as operand for **`Set less than (Magnitude Comparision)`**. while the result will be stored in destination register *r11*. If `r2<r4 implies r11=1 else r11=0 `
+
+   - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |
+      |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+      | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
+      |0000000| 00100| 00010| 010| 01011 |0110011 |
+   - RV32I instruction is `0000000 00100 00010 010 01011 0110011 `
+
+7.  addi r12,r4,5 :
+   -  The above instruction is a **`I-type`** base instruction formate as a immediate value **`binary 5 will be added to r4`** and the result will be stored in destination register *r12*. 
+   - | 31-20 | 19-15 | 14-12 | 11-7 | 6-0 |  
+     |:----------:|:-----:|:-----:|:----:|:---:|
+     | imm [11:0] |  rs1  | funct3|  rd  |opcode|
+     |000000000101  |00100 |000 | 01100|0010011|
+
+   - RV32I instruction is `000000000101 00100 000 01100 0010011`
 
 
-11.  addi r12,r4,5 :<br>
-       The above instruction is a **`I-type`** base instruction formate as a immediate value **`5 will be added to r4`** and the result will be stored in destination register *r12*. 
-
-
-12.  sw r3,r1,2 :<br>
+9.  sw r3,r1,2 :<br>
     The above instruction is a **`S-type`** base instruction formate and the opcode `store word` specifies to **`move/save the 32-bit content of source register r3 to the memory location whose base address = r1 with an offset 2`**.
 
 
-13.  lw r13,r1,2 :<br>
+10.  lw r13,r1,2 :<br>
      The above instruction is a **`S-type`** base instruction formate and the opcode `load word` specifies to **`load the 32-bit content of the memory location whose base address = r1 + offset 2 into the destination register r13`**.
 
 
-14.  beq  r0,r0,15 : <br>
+11.  beq  r0,r0,15 : <br>
       The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is equal to source2 register r0 then branch to instructions at memory location 15 instructions ahead of current instruction`**.
 
 
-15. bne r0,r1,20 : <br>
+12. bne r0,r1,20 : <br>
      The above instruction is a **`B-type`** base instruction formate and the opcode `branch if equal` specifies to **`check if source1 register r0 is not equal to source2 register r1 then branch to instructions at memory location 20 instructions ahead of current instruction.`**.
 
 
-16.  sll r15,r1,r2(2) : <br>
+13.  sll r15,r1,r2(2) : <br>
       
       The above given instruction is a **`Logical Left Shift`** operator, where the contentents of source1 register r1 is shifted by content of  `r2*2`. And the result is stored in destination register r15.
 
 
-17. srl r16,r14,r2(2) : <br>
+14. srl r16,r14,r2(2) : <br>
    The above given instruction is a **`Logical Right Shift`** operator, where the contentents of source1 register r14 is shifted by content of  `r2*2`. And the result is stored in destination register r16.
 
