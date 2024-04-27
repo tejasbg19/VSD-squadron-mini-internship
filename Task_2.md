@@ -1,12 +1,20 @@
 # Task-2 : Identify instruction type and exact 32-bit instruction code in the instruction type format. Upload the 32-bit pattern on Github 
 
-And the given instructions are in the below image 
-
-![Screenshot_20240417_222748_Chrome](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/ece4505e-cee7-47ca-92f1-07aefaca42e3)
-Source : VSD google form
-
-
-
+And the given instructions are: 
+<br>  add r6,r2,r1
+<br>  sub r7,r1,r2
+<br>  and r8,r1,r3
+<br>  or r9,r2,r5
+<br>  xor r10,r1,r4
+<br>  slt r11,r2,r4
+<br>  addi r12,r4,5
+<br>  sw r3,r1,2
+<br>  lw r13,r1,2
+<br>  beq r0,r0,15
+<br>  bne r0,r1,20
+<br>  sll r15,r1,r2(2)
+<br>  srl r16,r14,r2(2)
+<br>
 To complete this task we first need to understand 32-bit RISC V (**RV32I**) instructions, their types & how they work.
 
 # RV32I (Risc V 32-bit Non-Embedded) :
