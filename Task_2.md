@@ -128,20 +128,13 @@ We can classify the base integer ISA into 6 types:
 It is also important to note that the ***RISC-V ISA keeps the source (rs1 and rs2) and destination (rd) registers at the same position
 in all formats*** to simplify decoding. Except for the 5-bit immediates used in CSR (control & status register) instructions.
 
-<br> <br>
-Syntax for all instructions at one place.
-![Screenshot (445)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1fd56bbd-f8a0-48c0-83f4-d0c5a86ebaef)
-Source: The PDF volume1 Unprivilaged riscv ISA.
-
 
 <br>
 
 ## The Opcodes for operations:
 
-The below opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) in volume1, unprivilaged PDF.
+The opcode table gives us the corresponting binary code for a specific operation. And can be found on official [**riscv website**](https://riscv.org/technical/specifications/) in volume1, unprivilaged PDF.
 
-![Screenshot (444)](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/38908e80-3139-483c-bd7f-09bc8cc29317)
-Source: The PDF volume1 Unprivilaged riscv ISA.
 
 <br>
 
