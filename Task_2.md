@@ -165,9 +165,9 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
 2.  sub r7,r1,r2 :
     - The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r2* which contain the data that will be passed as operand for the **`operation of subtraction`**. while the result will be stored in destination register *r7*.
     -  | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |
-      |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
-     | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
-     |0100000| 00001| 00010| 000| 00111| 0110011|
+       |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
+       | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
+       |0100000| 00001| 00010| 000| 00111| 0110011|
     -  RV32I instruction is `0100000 00001 00010 000 00111 0110011`
    
 
@@ -176,8 +176,8 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
    - The above instruction is a **`R-type`** base instruction formate as the registers *r1* & *r3* which contain the data that will be passed as operand for **`Bitwise Logical AND operation`**. while the result will be stored in destination register *r8*.
    -  | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |
       |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
-     | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
-     |0000000 |00001 |00011 |111| 01000| 0110011|
+      | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
+      |0000000 |00001 |00011 |111| 01000| 0110011|
 
    -  RV32I instruction is `0000000 00001 00011 111 01000 0110011`
 
@@ -185,8 +185,8 @@ Source: The PDF volume1 Unprivilaged riscv ISA.
     - The above instruction is a **`R-type`** base instruction formate as the registers *r2* & *r5* which contain the data that will be passed as operand for **`Bitwise Logical OR operation`**. while the result will be stored in destination register *r9*.
     - | 31-25 | 24-20 | 19-15 | 14-12 | 11-7 | 6-0 |
       |:-----:|:-----:|:-----:|:-----:|:----:|:---:|
-     | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
-     |0000000| 00101|00010 | 110 | 01001 |0110011 |
+      | funct7|  rs2 |  rs1  | funct3|  rd  |opcode|
+      |0000000| 00101|00010 | 110 | 01001 |0110011 |
 
     - RV32I instruction is `0000000 00101 00010 110 01001 0110011`
 
