@@ -81,6 +81,24 @@ $ riscv64-unknown-elf-objdump -d program_name.o
 
 ![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_06_22 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/b572341c-d106-423c-9505-5aa117a29910)
 
+to search for `main()` section of our program bellow the bellow step,
+
+```
+$ riscv64-unknown-elf-objdump -d program_name.o | less
+: /main
+```
+
+press `n` key to scrolldown.
+![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_06_56 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7af02f39-f5b1-432a-a320-12d8300a1a54)
+
+![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_17_48 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/0aeba1b1-2e4d-4983-8d48-d79dc7ea9e56)
+
+![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_18_11 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/bd295160-43b0-4628-9c2a-db43a4f608ab)
+
+The above image shows the `main()` section of my program.
+
+
+
 
 
 
