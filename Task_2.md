@@ -1,4 +1,4 @@
-# Task-2 : Identify instruction type and exact 32-bit instruction code in the instruction type format. Upload the 32-bit pattern on Github 
+# Task-2 : Identify Instruction Type And Exact 32-bit Instruction Code In The Instruction Type Format. Upload The 32-bit Pattern On Github 
 
 And the given instructions are: 
 <br>  add r6,r2,r1
