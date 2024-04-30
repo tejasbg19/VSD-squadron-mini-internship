@@ -13,5 +13,5 @@
 
 ## Task_3
 
-**Task-3** is to write a `c program` and compile it using `gcc` & `riscv compiler` to obtain `riscv` instructions of that `c program` and analyse it.
+**Task-3** is to write a `c program` and compile it using `gcc` & `riscv compiler` to obtain assembly instructions of that `c program` and analyse it.
 [Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_3.md) to view more.
