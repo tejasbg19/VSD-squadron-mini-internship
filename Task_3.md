@@ -63,4 +63,19 @@ $ ./a.out
 
 
 
-To compile the program in riscv gcc compiler follow the below instructions.
+To compile the program in riscv gcc compiler follow the below instruction.
+
+```
+$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o program_name.o program_name.c
+```
+
+![trial2  Running  - Oracle VM VirtualBox 4_30_2024 11_55_18 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/948daa3a-738f-4b79-a395-648ebd3e87c9)
+
+
+Now open a new tab in terminal using `ctrl + shift + T` and follow below instruction to open the assembly code for the c program we had executed earlier.
+
+```
+$ riscv64-unknown-elf-objdump -d program_name.o
+```
+![Photos 5_1_2024 12_01_28 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f594b5ce-505b-435a-9968-07e09a666e8d)
+
