@@ -97,8 +97,12 @@ press `n` key to scrolldown.
 
 ![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_18_11 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/bd295160-43b0-4628-9c2a-db43a4f608ab)
 
-The above image shows the `main()` section of my program.
-
+The above image shows the `main()` section of my program. And as we can see there are 11 instructions in the `main()`. Address of each instruction can be seen. The address of the next instruction is `current address + 4 bytes`. <br>
+<br> 
+**Total Number of Instructions = (Address of the first instruction of the next instruction block -  Address of the first instruction of the current instruction block) / 4***
+<br>
+<br>
+Therefore, Total number of instructions in main() =  (101b0 - 10184)/4 = (B/4)<sub>**16**</sub> = (**11**)<sub>**10**</sub>
 
 
 
