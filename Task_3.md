@@ -99,7 +99,7 @@ press `n` key to scrolldown & press `q` to quit.
 
 The above image shows the `main()` section of my program. And as we can see there are 11 instructions in the `main()`. Address of each instruction can be seen. The address of the next instruction is `current address + 4 bytes`. <br>
 <br> 
-**Total Number of Instructions = (Address of the first instruction of the next instruction block -  Address of the first instruction of the current instruction block) / 4***
+**Total Number of Instructions = (Address of the first instruction of the next instruction block -  Address of the first instruction of the current instruction block) / 4**
 <br>
 <br>
 Therefore, Total number of instructions in main() =  (101b0 - 10184)/4 = (B/4)<sub>**16**</sub> = (**11**)<sub>**10**</sub>
@@ -125,6 +125,19 @@ $ riscv64-unknown-elf-objdump -d program_name.o | less
 : /main
 ```
 
+![Editing VSD-squadron-mini-internship_Task_3 md at main · tejasbg19_VSD-squadron-mini-internship and 14 more pages - Personal - Microsoft​ Edge 5_1_2024 1_05_44 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9bb811d6-1838-48a7-8f21-1e5eb8cf17df)
+
+![trial2  Running  - Oracle VM VirtualBox 5_1_2024 1_08_11 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/c5909fa6-ee99-49f5-8623-813fa72fb6f1)
+
+
+
+
+**Number of Instructions =** (Address of the first instruction of the next instruction block -  Address of the first instruction of the current instruction block) / 4 
+
+Therefore, Number of Instructions = (100dc - 100b0)\4 = (2C/4)<sub>**16**</sub> = (11)<sub>**10**</sub>
+<br>
+
+Even tough the number of instructions remain the same, the size of the program has reduced, which we can observe by the byte adress of the main(), earlier it began with 101XX but now it is beginning with 100XX.
 
 
 
