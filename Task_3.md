@@ -137,7 +137,7 @@ $ riscv64-unknown-elf-objdump -d program_name.o | less
 Therefore, Number of Instructions = (100dc - 100b0)\4 = (2C/4)<sub>**16**</sub> = (11)<sub>**10**</sub>
 <br>
 
-Even tough the number of instructions remain the same, the size of the program has reduced, which we can observe by the byte adress of the main(), earlier it began with 101XX but now it is beginning with 100XX.
+Even though the number of instructions remain the same, the size of the program has reduced, which we can observe by the byte adress of the main(), earlier it began with 101XX but now it is beginning with 100XX.
 
 
 
