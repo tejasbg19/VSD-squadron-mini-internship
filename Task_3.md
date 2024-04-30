@@ -79,3 +79,8 @@ $ riscv64-unknown-elf-objdump -d program_name.o
 ```
 ![Photos 5_1_2024 12_01_28 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f594b5ce-505b-435a-9968-07e09a666e8d)
 
+![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_06_22 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/b572341c-d106-423c-9505-5aa117a29910)
+
+
+
+
