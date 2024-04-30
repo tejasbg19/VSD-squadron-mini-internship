@@ -81,14 +81,14 @@ $ riscv64-unknown-elf-objdump -d program_name.o
 
 ![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_06_22 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/b572341c-d106-423c-9505-5aa117a29910)
 
-to search for `main()` section of our program bellow the bellow step,
+to search for `main()` section of our program below the below step,
 
 ```
 $ riscv64-unknown-elf-objdump -d program_name.o | less
 : /main
 ```
 
-press `n` key to scrolldown.
+press `n` key to scrolldown & press `q` to quit.
 
 
 ![trial2  Running  - Oracle VM VirtualBox 5_1_2024 12_06_56 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7af02f39-f5b1-432a-a320-12d8300a1a54)
@@ -103,6 +103,27 @@ The above image shows the `main()` section of my program. And as we can see ther
 <br>
 <br>
 Therefore, Total number of instructions in main() =  (101b0 - 10184)/4 = (B/4)<sub>**16**</sub> = (**11**)<sub>**10**</sub>
+
+
+## Role of -O1: 
+
+**-O** is a flag which directs the compiler to what extent it needs to optimize a given program, the optimization may be in terms of reducing binary size of the program while compramizing of the speed of execution or optimize the speed of exceution while increasing the binary program size. There are various levels of optimization,
+<br>
+**-O0** : This flag disables most optimizations and thus generated assembly code will be most human readable hence easy to debug. <br>
+**-O1** : This flag offers basic optimization, balances binary code size as well as speed. <br>
+**-Ofast** : This flag offers aggressive optimizations. It prioritizes speed of execution over the size of compiled binary program size. <br>
+**-Os** : This flag sacrifices execution speed to reduce binary size. <br>
+<br>
+
+Let us compile the same program with **-Ofast** flag.
+
+
+```
+$ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o program_name.o program_name.c
+# In a new terminal tab
+$ riscv64-unknown-elf-objdump -d program_name.o | less
+: /main
+```
 
 
 
