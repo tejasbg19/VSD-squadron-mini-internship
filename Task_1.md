@@ -175,7 +175,7 @@ $ sudo make linux
 ```
 
 
-Also it is important to note that through **Method_2** even tough we installed only `riscv64-unknown-elf-gcc` (64 bit riscv compiler) we can give special directives to the same compiler to compile a given `c program` into **32-bit binary file** to target 32-bit devices using **`-mabi=ilp32`** & **`-march=rv32i`** flags.
+Also it is important to note that through **Method_2** even tough we installed only `riscv64-unknown-elf-gcc` (64 bit riscv compiler) we can give special directives to the same compiler to compile a given `c program` into **32-bit binary file** to target 32-bit devices using **`-mabi=ilp32`** and **`-march=rv32i`** flags.
 
 
 
