@@ -162,7 +162,7 @@ I found it is easy to install, setup and run the toolchain in ubuntu 18.04 and t
 
 ```
 $ git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git directory_where_u_want_to_clone_repo
-$ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev
+$ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev or $ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev ninja-build git cmake libglib2.0-dev
 $ cd directory_where_u_want_to_clone_repo
 $ mkdir build
 $ ../configure --prefix=/absolute/path/where/u/want/to/keep/the/tools --enable-multilib
