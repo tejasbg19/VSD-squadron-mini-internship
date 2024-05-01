@@ -93,7 +93,10 @@ The installation can be verified as shown below
 
 ## Steps to install RISC-V GNU Compiler Toolchain
 
-We will be installing the tools from the [this github repo](https://github.com/riscv-collab/riscv-gnu-toolchain), you can refer that page if you face any unexpected errors in the process. 
+We will be installing the tools from the [this github repo](https://github.com/riscv-collab/riscv-gnu-toolchain), you can refer that page if you face any unexpected errors in the process. Also there are two methods I used, you can use either of them 
+
+
+### Method_1:
 
 ```
 # Prerequisites before we clone
@@ -151,6 +154,30 @@ The output of above commands
 
 
 ![tejas-bg-vsd-internship  Running  - Oracle VM VirtualBox 4_21_2024 5_05_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a6125c9a-06f4-4285-b04f-ef9cda00d4ec)
+
+
+### Method_2 :
+
+I found it is easy to install, setup and run the toolchain in ubuntu 18.04 and the below instructions are applicable to it.
+
+```
+$ git clone https://github.com/riscv-collab/riscv-gnu-toolchain.git directory_where_u_want_to_clone_repo
+$ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev
+$ cd directory_where_u_want_to_clone_repo
+$ mkdir build
+$ ../configure --prefix=/absolute/path/where/u/want/to/keep/the/tools --enable-multilib
+# We will modify the path variable to not specify the path of tools to the terminal while installation
+$ echo 'export PATH="/absolute/path/where/u/want/to/keep/the/tools/bin:$PATH"' >> ~/.bashrc
+$ source ~/.bashrc
+# use make to setup newlib(for light embedded compilation) or use make linux( for heavy gnu compilation)
+$ sudo make
+$ sudo make linux
+```
+
+
+Also it is important to note that through **Method_2** even tough we installed only `riscv64-unknown-elf-gcc` (64 bit riscv compiler) we can give special directives to the same compiler to compile a given `c program` into **32-bit binary file** to target 32-bit devices using **`-mabi=ilp32`** & **`-march=rv32i`** flags.
+
+
 
 With this, the installation of tools is complete, To test the RISC-V GNU Compiler Toolchain, we will write a c program `hello.c` & compile it. Also if you donot have any text editor, follow the below commands to install `vim` text editor
 
