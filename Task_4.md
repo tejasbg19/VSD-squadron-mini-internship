@@ -1,5 +1,5 @@
 
-# Task-3 : Verifying the outputs of gcc & riscv64 compiled program outputs & debugging them.
+# Task-3: Verifying Outputs of `gcc` and `riscv64` Compiled Programs, Debugging `rv64imac` Compiled Assembly Object File Instruction by Instruction
 
 
 ## Observing The Outputof riscv compilation:
@@ -100,7 +100,7 @@ After running the first instruction, let us check the content of `register a0` a
 <br>
 
 
-As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format.  "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
+As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format as I have used **`-march=rv64imac`** target architecture flag while compilation of the program instead of **`Standard Base Interger `** **`rv64i`** ISA. "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
 <br>
 
 The next instruction involves `sp(stack pointer)` to let us check its value befor running the next instruction.
