@@ -85,3 +85,7 @@ To know the value stored in `a0` register before the execution of first instruct
 To run the next instruction, just press `enter`. It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
 
 
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_31_04 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2a46a565-f7b9-42c9-8be2-d56e7831a33e)
+
+
+
