@@ -41,6 +41,22 @@ Now we know how to obtain the assembly instructions of our `object file`
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_07_51 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/57c21472-ab4d-46ad-8c46-0de7c6305e7d)
 
 
+From the above image the riscv instructions present in `main()` are 
+
+```
+   10104:       6565                    lui     a0,0x19
+   10106:       1141                    addi    sp,sp,-16
+   10108:       02400613                li      a2,36
+   1010c:       45a1                    li      a1,8
+   1010e:       38050513                addi    a0,a0,896 # 19380 <__clzdi2+0x40>
+   10112:       e406                    sd      ra,8(sp)
+   10114:       3b8000ef                jal     104cc <printf>
+   10118:       60a2                    ld      ra,8(sp)
+   1011a:       4501                    li      a0,0
+   1011c:       0141                    addi    sp,sp,16
+   1011e:       8082                    ret
+```
+
 
 To instruct the spike to exceute the instructions until `main()` we can give the command 
 
@@ -50,3 +66,13 @@ To instruct the spike to exceute the instructions until `main()` we can give the
 # in my case it is 
 (spike) until pc 0 10104
 ```
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_36 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9f62de1b-ad6f-4a80-998f-b3fbb90fed66)
+
+
+
+
+
+`a0` register 
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_18_26 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f0911bb3-0c9e-4a62-ac4b-e4a8c3903bd5)
+
+
