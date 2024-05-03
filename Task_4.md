@@ -60,6 +60,8 @@ From the above image the riscv instructions present in `main()` are
    1011e:       8082                    ret
 ```
 
+## Analysing Each Instruction:
+
 
 To instruct the spike to exceute the instructions until `main()` we can give the command 
 
@@ -101,8 +103,24 @@ After running the first instruction, let us check the content of `register a0` a
 As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format.  "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
 <br>
 
+The next instruction involves `sp(stack pointer)` to let us check its value befor running the next instruction.
+```
+(spike) reg 0 sp
+```
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_16_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/eaacb1e6-fd49-4617-9a87-d7f8983daebe)
+The `sp` currently holds the value `3ffffffb50`. 
+<br>
+
 To execute the next instruction again press `enter`.
 ![Photos 5_3_2024 9_55_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7d840e7c-e9fb-4647-9a5d-35da785466c4)
 
 
 The instruction `c.addi sp, -16` is compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
+
+<br> <br>
+
+To **QUIT** `spike`, simply press `q` followed by `enter`. If you happen to miss noting down the value of a `register` or `sp` before running an instruction, you can always quit `spike` and rerun it in debug mode. Instead of providing the first instruction address for `main()`, you can input the address one step earlier than the instruction whose register value you wish to examine before executing that specific instruction.
+
+<br>
+
+
