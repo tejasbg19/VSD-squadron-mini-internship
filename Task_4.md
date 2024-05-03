@@ -30,14 +30,16 @@ To open spike in debug mode, use the below code.
 $ spike -d pk program_name.o
 ```
 
-image 
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_28 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/fbf8e771-425e-43eb-a848-46ecf3c415fd)
+ 
 
 
 
 Now we know how to obtain the assembly instructions of our `object file` 
 (using `$ riscv64-unknown-elf-objdump -d program_name.o | less`). keeping the address of `main()` as a reference from the above code, let us debug our program instruction register by register in spike. 
 
-image of obj file
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_07_51 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/57c21472-ab4d-46ad-8c46-0de7c6305e7d)
+
 
 
 To instruct the spike to exceute the instructions until `main()` we can give the command 
