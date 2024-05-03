@@ -1,4 +1,4 @@
-# Task-3 : Compile A C Program Using Riscv Compiler
+# Task-3 : Compile a `c` Program Using Riscv Compiler
 
 
 ## Installing Leafpad Text Editor:
