@@ -73,7 +73,15 @@ To instruct the spike to exceute the instructions until `main()` we can give the
 
 
 
-`a0` register 
+To know the value stored in `a0` register before the execution of first instruction we use the below command 
+
+
+```
+(spike) reg 0 a0
+```
+
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_18_26 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f0911bb3-0c9e-4a62-ac4b-e4a8c3903bd5)
+
+To run the next instruction, just press `enter`. It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
 
 
