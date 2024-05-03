@@ -1,4 +1,4 @@
-
+![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/42114938-1308-4728-b082-20696b2a7a39)
 # Task-3: Verifying Outputs of `gcc` and `riscv64` Compiled Programs, Debugging `rv64imac` Compiled Assembly Object File Instruction by Instruction
 
 
@@ -88,7 +88,7 @@ To know the value stored in `a0` register before the execution of first instruct
 
 <br>
 
-To run the first instruction, just press `enter`. It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
+To run the ***1<sup>st</sup>*** instruction, just press `enter`. It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
 
 
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_31_04 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2a46a565-f7b9-42c9-8be2-d56e7831a33e)
@@ -103,7 +103,7 @@ After running the first instruction, let us check the content of `register a0` a
 As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format as I have used **`-march=rv64imac`** target architecture flag while compilation of the program instead of **`Standard Base Interger `** **`rv64i`** ISA. "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
 <br>
 
-The next instruction involves `sp(stack pointer)` to let us check its value befor running the next instruction.
+The next instruction involves `sp(stack pointer)` so let us check its value before running the ***2<sup>nd</sup>*** instruction.
 ```
 (spike) reg 0 sp
 ```
@@ -111,14 +111,14 @@ The next instruction involves `sp(stack pointer)` to let us check its value befo
 The `sp` currently holds the value `3ffffffb50`. 
 <br>
 
-To execute the next instruction again press `enter`.
+To execute the ***2<sup>nd</sup>*** instruction again press `enter`.
 ![Photos 5_3_2024 9_55_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7d840e7c-e9fb-4647-9a5d-35da785466c4)
 
-The instruction `c.addi sp, -16` is compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
+The instruction `c.addi sp, -16` is a compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
 <br>
 To view the modified `sp` value of execution of `c.addi sp, -16` use below instruction.
 ```
-reg 0 sp
+(spike) reg 0 sp
 ```
 ![RV_D1SK2_L3_spikeSimulationAndDebug mp4 - OneDrive and 19 more pages - Personal - Microsoft​ Edge 5_3_2024 10_39_23 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a48e86e2-31d3-4ba8-add3-6762ebb37f93)
 
@@ -126,10 +126,37 @@ reg 0 sp
 
 **(16)<sub>10</sub> = (10)<sub>16</sub>**, `sp` value before exceution of `c.addi sp, -16` was **3ffffffb50** & we know that **(3ffffffb50 - 10 = 3ffffffb40)<sub>16</sub>**
 
+<br>
+
+The  ***3<sup>rd</sup>*** instructions involves `reg a0`, so let us check its value before the execution.
+
+```
+(spike) reg 0 a2
+```
+
+![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2d23f473-8cad-4dca-a843-a7e46d0508c6)
+
+The `register a2` stores `0000000000000000` before the exceution of the ***3<sup>rd</sup>*** instruction of `main()`.
+
+<br>
+
+Press `enter` to exceute the  ***3<sup>rd</sup>*** instruction. & check the value held in ` reg a2` after the execution of ***3<sup>rd</sup>*** instruction.
+
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_15_21 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9afb6df2-5308-416c-95cc-7c65dc710c62)
+
+The instruction `li a2, 36` sets the value of register a2 to decimal 36 (0x24 in hexadecimal). `li` stands for `load immidiate` and is a `I-type instruction`. 
+
+
+
+
+
 
 <br> 
 
 To **QUIT** `spike`, simply press `q` followed by `enter`. If you happen to miss noting down the value of a `register` or `sp` before running an instruction, you can always quit `spike` and rerun it in debug mode. Instead of providing the first instruction address for `main()`, you can input the address one step earlier than the instruction whose register value you wish to examine before executing that specific instruction.
+
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_15_21 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/5e879eb4-8321-4e81-aecc-83eb48487b20)
+
 
 <br>
 
