@@ -15,3 +15,9 @@
 
 **Task-3** is to write a `c program` and compile it using `gcc` & `riscv compiler` to obtain assembly instructions of that `c program` and analyse it.
 [Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_3.md) to view more.
+
+
+## Task_4
+
+**Task-4** Compile the `c program` `gcc` & `riscv compiler` & verifying their outputs. As well as use `spike` to debug the riscv64 assembly instructions and analyse them. 
+[Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_4.md) to view more.
