@@ -15,7 +15,11 @@ $ spike pk program_name.o
 Below we can see the outputs of normal gcc & spike. As we can see they are equal as they are supposed to be .
 
 
-image
+GCC Output             |  riscv64 Output
+:-------------------------:|:-------------------------:
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/35fc49e2-dbef-4140-a868-e729b8ec12a5)
+ |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_28 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7c81f364-3d2e-4c64-bc4c-1e51db12f25f)
+
 
 
 ## Debugging Using Spike:
@@ -31,7 +35,7 @@ image
 
 
 Now we know how to obtain the assembly instructions of our `object file` 
-(using `$ riscv64-unknown-elf-objdump -d program_name.o | less`). keeping the address of `main()` as a reference from the above code, let us debug in spike. 
+(using `$ riscv64-unknown-elf-objdump -d program_name.o | less`). keeping the address of `main()` as a reference from the above code, let us debug our program instruction register by register in spike. 
 
 image of obj file
 
