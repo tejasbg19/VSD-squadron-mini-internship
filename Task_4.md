@@ -87,7 +87,7 @@ To run the first instruction, just press `enter`. It is also important to observ
 
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_31_04 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2a46a565-f7b9-42c9-8be2-d56e7831a33e)
 
-After running the first instruction, let us check the content of `reg a0` again using `reg 0 a0`.
+After running the first instruction, let us check the content of `register a0` again using `reg 0 a0`.
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_35_34 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/47631035-7e9c-4fe3-8f3f-87bd4ecfd9ee)
 
 As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format.  "0x19" is a hexadecimal value. The "0x" prefix signifies that the following number is in hexadecimal notation.
