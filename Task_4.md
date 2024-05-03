@@ -30,7 +30,8 @@ To open spike in debug mode, use the below code.
 $ spike -d pk program_name.o
 ```
 
-![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_28 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/fbf8e771-425e-43eb-a848-46ecf3c415fd)
+![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_28 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/04f83cc3-c502-4e62-8af8-dbe375563d26)
+
  
 
 
