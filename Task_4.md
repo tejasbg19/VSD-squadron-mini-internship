@@ -114,10 +114,20 @@ The `sp` currently holds the value `3ffffffb50`.
 To execute the next instruction again press `enter`.
 ![Photos 5_3_2024 9_55_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7d840e7c-e9fb-4647-9a5d-35da785466c4)
 
-
 The instruction `c.addi sp, -16` is compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
+<br>
+To view the modified `sp` value of execution of `c.addi sp, -16` use below instruction.
+```
+reg 0 sp
+```
+![RV_D1SK2_L3_spikeSimulationAndDebug mp4 - OneDrive and 19 more pages - Personal - Microsoft​ Edge 5_3_2024 10_39_23 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a48e86e2-31d3-4ba8-add3-6762ebb37f93)
 
-<br> <br>
+<br> 
+
+**(16)<sub>10</sub> = (10)<sub>16</sub>**, `sp` value before exceution of `c.addi sp, -16` was **3ffffffb50** & we know that **(3ffffffb50 - 10 = 3ffffffb40)<sub>16</sub>**
+
+
+<br> 
 
 To **QUIT** `spike`, simply press `q` followed by `enter`. If you happen to miss noting down the value of a `register` or `sp` before running an instruction, you can always quit `spike` and rerun it in debug mode. Instead of providing the first instruction address for `main()`, you can input the address one step earlier than the instruction whose register value you wish to examine before executing that specific instruction.
 
