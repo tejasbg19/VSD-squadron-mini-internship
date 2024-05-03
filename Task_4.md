@@ -15,10 +15,10 @@ $ spike pk program_name.o
 Below we can see the outputs of normal gcc & spike. As we can see they are equal as they are supposed to be .
 
 
-GCC Output             |  riscv64 Output
-:-------------------------:|:-------------------------:
-![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/35fc49e2-dbef-4140-a868-e729b8ec12a5)
- |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_28 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7c81f364-3d2e-4c64-bc4c-1e51db12f25f)
+|  GCC Output             |  riscv64 Output  |
+|:-------------------------:|:-------------------------:|
+| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/35fc49e2-dbef-4140-a868-e729b8ec12a5)
+ |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_28 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7c81f364-3d2e-4c64-bc4c-1e51db12f25f) |
 
 
 
