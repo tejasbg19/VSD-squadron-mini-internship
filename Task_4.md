@@ -17,8 +17,7 @@ Below we can see the outputs of normal gcc & spike. As we can see they are equal
 
 |  GCC Output             |  riscv64 Output  |
 |:-------------------------:|:-------------------------:|
-| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/35fc49e2-dbef-4140-a868-e729b8ec12a5) |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_55 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/27cb2bd6-f8c6-4f0a-9282-3ff428be3012)
- |
+| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/35fc49e2-dbef-4140-a868-e729b8ec12a5) |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 7_59_55 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/27cb2bd6-f8c6-4f0a-9282-3ff428be3012)|
 
 
 
