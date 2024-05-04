@@ -204,8 +204,44 @@ To execute the ***4<sup>th</sup>*** instruction again press `enter`. Then check 
 
 <br>
 
+- The `register a1` stores `0000003ffffffb58` before the execution of the fourth instruction of `main()`.
+- The instruction `li a1, 8` sets the value of `register a1` to decimal 8 (0x8 in hexadecimal).
+- `li` stands for "load immediate."
+- This is an `I-type instruction`.
 
+<br>
+<br>
 
+### Instruction - 05
+
+```
+ addi    a0,a0,896 
+```
+
+The  ***5<sup>th</sup>*** instruction involves `reg a0`, so to check its value before the execution of ***5<sup>th</sup>*** instruction use,
+
+```
+(spike) reg 0 a0
+```
+
+To execute the ***5<sup>th</sup>*** instruction again press `enter`. Then check the value of `reg a0` using 
+
+```
+(spike) reg 0 a0
+```
+
+<br>
+
+|  Value of `reg a0` before the execution of ***5<sup>th</sup>*** instruction   |  Value of `reg a0` after the execution of ***5<sup>th</sup>*** instruction |
+|:-------------------------:|:-------------------------:|
+|![Photos 5_4_2024 6_16_33 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/822996ec-4113-499e-840b-d5c05582c66f)|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 6_17_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/41511a78-ee66-4466-8833-6bfb670c8dfd)|
+
+<br>
+
+- The `register a0` stores `0000000000019000` before the execution of the fifth instruction of `main()`.
+- The instruction `addi a0, a0, 896` adds the immediate value decimal value 896 to the current value of `register a0`.
+-  **0000000000019000 + 390 = 0000000000019390** in hexadecimal.
+- This is an `I-type instruction`.
 
 
 
