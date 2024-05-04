@@ -141,6 +141,6 @@ Even though the number of instructions remain the same, the size of the program 
 
 
 
-***NOTE :*** The 4 byte offset between two adjacent instructions is only valid for `rv64i` architectured assembly `.o` files which are generated using `-march=rv64i` flag while compilation. If we use any different architecture say `rv64imac` etc., the 4 byte offset is not observed.
+***NOTE :*** The 4 byte offset between two adjacent instructions is only valid for `rv64i` architectured assembly `.o` files which are generated using `-march=rv64i` flag while compilation. If we use any different architecture say `rv64imac` with the compiler flag `-march=rv64imac` etc., the 4 byte offset is not observed.
 
 
