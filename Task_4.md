@@ -190,7 +190,7 @@ The  ***4<sup>th</sup>*** instruction involves `reg a1`, so to check its value b
 (spike) reg 0 a1
 ```
 
-To execute the ***4<sup>th</sup>*** instruction again press `enter`. Then check the value of `reg a2` using 
+To execute the ***4<sup>th</sup>*** instruction again press `enter`. Then check the value of `reg a1` using 
 
 ```
 (spike) reg 0 a1
