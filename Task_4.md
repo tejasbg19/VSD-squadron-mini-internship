@@ -129,7 +129,7 @@ To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check th
 
 |  Value of `sp` before the execution of 2<sup>nd</sup> instruction   |  Value of `sp` after the execution of 2<sup>nd</sup> instruction  |
 |:-------------------------:|:-------------------------:|
-| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_16_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/eaacb1e6-fd49-4617-9a87-d7f8983daebe) |![Photos 5_3_2024 9_55_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7d840e7c-e9fb-4647-9a5d-35da785466c4)|
+| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_16_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/eaacb1e6-fd49-4617-9a87-d7f8983daebe) |![RV_D1SK2_L3_spikeSimulationAndDebug mp4 - OneDrive and 19 more pages - Personal - Microsoft​ Edge 5_3_2024 10_39_23 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a48e86e2-31d3-4ba8-add3-6762ebb37f93)|
 
 <br>
 
@@ -138,13 +138,12 @@ The `sp` previously held the value `3ffffffb50`.
 The instruction `c.addi sp, -16` is a compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
 <br>
 
-![RV_D1SK2_L3_spikeSimulationAndDebug mp4 - OneDrive and 19 more pages - Personal - Microsoft​ Edge 5_3_2024 10_39_23 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a48e86e2-31d3-4ba8-add3-6762ebb37f93)
-
-<br> 
-
 **(16)<sub>10</sub> = (10)<sub>16</sub>**, `sp` value before exceution of `c.addi sp, -16` was **3ffffffb50** & we know that **(3ffffffb50 - 10 = 3ffffffb40)<sub>16</sub>**
 
 <br>
+
+### Instruction - 03
+
 
 The  ***3<sup>rd</sup>*** instructions involves `reg a0`, so let us check its value before the execution.
 
