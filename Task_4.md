@@ -243,7 +243,26 @@ To execute the ***5<sup>th</sup>*** instruction again press `enter`. Then check 
 -  **0000000000019000 + 390 = 0000000000019390** in hexadecimal.
 - This is an `I-type instruction`.
 
+<br>
+<br>
 
+### Instruction - 06
+
+```
+ sd      ra,8(sp)
+```
+
+The  ***6<sup>th</sup>*** instruction involves involves storing the value of the return address `register ra` at the memory address calculated as the sum of the stack pointer `sp` and an offset of `8` that is (sp + 8).
+
+
+To check the value of `register ra` & `sp` before the execution of this instruction, use:
+
+```
+(spike) reg 0 ra
+(spike) reg 0 sp
+```
+
+Press enter to execute the instruction again. Then, check the value of register ra using:
 
 
 
