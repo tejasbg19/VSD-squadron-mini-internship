@@ -303,10 +303,40 @@ The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, 
 ld      ra,8(sp)
 ```
 
-The  ***8<sup>th</sup>*** instruction involves loading the contents from the target memory address.
+The  ***8<sup>th</sup>*** instruction involves loading the contents from the target memory address. To findout the target memory address, we need to check the address stored in `sp` using the below command,
+
+```
+(spike) reg 0 sp
+```
+
+![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 15 more pages - Personal - Microsoft​ Edge 5_4_2024 10_43_14 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/5f68425a-d435-408b-a322-a406c60645bc)
 
 
+- From the above image we can see that current address stored in `sp` is 0000003ffffffb40<sub>HEX</sub>
+- **Target memory address = (current address saved in sp + 8 = 0000003ffffffb48)**<sub>HEX</sub>
+- This instruction loads the value stored at the memory address ***0000003ffffffb48<sub>HEX</sub>*** obtained by adding 8 to the `stack pointer (sp)` into the `register ra`.
+- Before the control is transferred to the `print` function, the address of the next instruction after the jump statement (`10118` in hexadecimal) is stored in the `linkage register`, ensuring that control returns to the normal flow of `main()` after the `print` function completes its instructions.
+- We had stored the data of the `return register` using the 5<sub>th</sub> instruction & now we are retriving it back using this instruction.
+- This is a I-type instruction.
 
+<br>
+<br>
+
+### Instruction - 09
+
+```
+  li      a0,0
+```
+
+The  ***9<sup>th</sup>*** instruction involves loading an immidiate value `0` to `reg a0`. The contents of the register can be viwed using 
+```
+(spike) reg 0 a0
+```
+Then press`enter` to execute the instruction, after which use the same code to verify weather 0 has been loadded into `reg a0`.
+
+|  Value of `reg a0` before the execution of ***9<sup>th</sup>*** instruction   |  Value of `reg a0` after the execution of ***9<sup>th</sup>*** instruction |
+|:-------------------------:|:-------------------------:|
+|![Photos 5_4_2024 6_16_33 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/822996ec-4113-499e-840b-d5c05582c66f)|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 6_17_19 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/41511a78-ee66-4466-8833-6bfb670c8dfd)|
 
 
 
