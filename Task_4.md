@@ -290,7 +290,7 @@ The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, 
 
 - This instruction performs an unconditional jump to a target address.
 - ***Target address = (current address saved in pc + 3b8 = 104cc)<sub>HEX</sub>***
-- `sd ra, 8(sp)` is used to store the value of a `register ra` into memory at a specific address calculated as the sum of the `stack pointer sp` and an offset of 8
+- From the image on RHS we can see that this instruction essentially transfers the program control from `main()` function to `print` function.
 - This is a `J-type instruction`
 
 
