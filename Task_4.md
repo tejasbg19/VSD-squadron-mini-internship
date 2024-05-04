@@ -78,9 +78,9 @@ To instruct spike to execute instructions until main(), we command spike to run 
  ### Instruction - 01
 
 
-***```
+```
 c.lui     a0,0x19
-```***
+```
 
 To know the value stored in `a0` register before the execution of first instruction we use the below command 
 
