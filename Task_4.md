@@ -98,7 +98,7 @@ To run the ***1<sup>st</sup>*** instruction, just press `enter`. After running t
 
 |  Value of `reg a0` before the execution of 1<sup>st</sup> instruction   |  Value of `reg a0` after the execution of 1<sup>st</sup> instruction  |
 |:-------------------------:|:-------------------------:|
-| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_18_26 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f0911bb3-0c9e-4a62-ac4b-e4a8c3903bd5) |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_31_04 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2a46a565-f7b9-42c9-8be2-d56e7831a33e) |
+| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_18_26 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f0911bb3-0c9e-4a62-ac4b-e4a8c3903bd5) | ![image](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/8b5bdeb4-1a5b-4a81-9a2a-e3aff931e0a2)|
 
 <br>
 
