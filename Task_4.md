@@ -43,6 +43,9 @@ Now we know how to obtain the assembly instructions of our `object file`
 
 
 
+***NOTE :*** As we have compiles our progrem with a `-march=rv64imac` flag, the 4 byte offset between two adjacent instructions cannot be observed here.
+
+
 From the above image the riscv instructions present in `main()` are 
 
 ```
