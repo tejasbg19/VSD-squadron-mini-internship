@@ -25,7 +25,7 @@ All the instructions till `jal` under `print()` are executed in spike, but when 
 
 
 
-And the control has to be transfered to <_vfprintf_r> function as per `.o` file
+The control was supposed to be transfered to <_vfprintf_r> function as per `.o` file
 ![trial 20  Running  - Oracle VM VirtualBox 5_5_2024 12_20_56 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/635fed85-7204-4c56-bd01-9a327fe7b822)
 
 
@@ -36,7 +36,7 @@ Also I verified the <_vfprintf_r> function, it exixts at the same address specif
 
 
 
-If I continue to press `enter` random instructions are executed.
+If I continue to press `enter` random instructions are executed. 
 
 ![trial 20  Running  - Oracle VM VirtualBox 5_5_2024 12_22_02 AM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/3aead82f-cb97-488c-8572-75fa4c87787f)
 
