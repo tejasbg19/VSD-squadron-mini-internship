@@ -279,14 +279,28 @@ Press `enter` again to execute the instruction.
 ### Instruction - 07
 
 ```
-jal   pc + 0x3b8
+jal   pc + 0x3b8 
 ```
 
-The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, data stored in `pc (program counter)` can be viewed using,
+The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, & currently `pc` is pointing to address 10114<sub>16</sub>.
 
-```
-esfsewfeawgverg
-```
+|  Current value stored in `PC` | Instruction at address 104cc<sub>HEX</sub> |
+|:-------------------------:|:-------------------------:|
+|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 9_54_12 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1ddb6e4c-7ce7-4f57-84da-0df98a511666)|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 9_58_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/fa13dcdd-121a-4d43-a9fa-7c69f5943468)|
+
+- This instruction performs an unconditional jump to a target address.
+- ***Target address = (current address saved in pc + 3b8 = 104cc)<sub>HEX</sub>***
+- `sd ra, 8(sp)` is used to store the value of a `register ra` into memory at a specific address calculated as the sum of the `stack pointer sp` and an offset of 8
+- This is a `J-type instruction`
+
+
+
+
+
+
+
+
+
 
 
 
