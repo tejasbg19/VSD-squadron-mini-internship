@@ -145,13 +145,22 @@ To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check th
 ### Instruction - 03
 
 
-The  ***3<sup>rd</sup>*** instructions involves `reg a2`, so let us check its value before the execution.
+The  ***3<sup>rd</sup>*** instructions involves `reg a2`, so to check its value before the execution of ***3<sup>rd</sup>*** instruction use,
+
+```
+(spike) reg 0 a2
+```
+To execute the ***2<sup>nd</sup>*** instruction again press `enter`. Then check the value of `reg a2` using 
 
 ```
 (spike) reg 0 a2
 ```
 
-![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2d23f473-8cad-4dca-a843-a7e46d0508c6)
+|  Value of `sp` before the execution of 2<sup>nd</sup> instruction   |  Value of `sp` after the execution of 2<sup>nd</sup> instruction  |
+|:-------------------------:|:-------------------------:|
+| ![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2d23f473-8cad-4dca-a843-a7e46d0508c6)
+|![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_15_21 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9afb6df2-5308-416c-95cc-7c65dc710c62)|
+
 
 The `register a2` stores `0000000000000000` before the exceution of the ***3<sup>rd</sup>*** instruction of `main()`.
 
@@ -159,7 +168,7 @@ The `register a2` stores `0000000000000000` before the exceution of the ***3<sup
 
 Press `enter` to exceute the  ***3<sup>rd</sup>*** instruction. & check the value held in ` reg a2` after the execution of ***3<sup>rd</sup>*** instruction.
 
-![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_15_21 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9afb6df2-5308-416c-95cc-7c65dc710c62)
+
 
 The instruction `li a2, 36` sets the value of register a2 to decimal 36 (0x24 in hexadecimal). `li` stands for `load immidiate` and is a `I-type instruction`. 
 
