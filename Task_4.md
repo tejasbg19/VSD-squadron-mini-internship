@@ -291,6 +291,10 @@ The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, 
 |:-------------------------:|:-------------------------:|
 |![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 9_54_12 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1ddb6e4c-7ce7-4f57-84da-0df98a511666)|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 9_58_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/fa13dcdd-121a-4d43-a9fa-7c69f5943468)|
 
+
+![image](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/760921e7-564f-4ee2-b2c1-4cb93172b308)
+control being transferred to address **104cc<sub>HEX</sub>**
+
 - This instruction performs an unconditional jump to a target address.
 - **Target address = (current address saved in pc + 3b8 = 104cc)**<sub>HEX</sub>
 - From the image on the right-hand side (RHS), we can see that this instruction essentially transfers program control from the `main()` function to the `print` function.
@@ -311,9 +315,9 @@ The  ***8<sup>th</sup>*** instruction involves loading the contents from the tar
 ```
 (spike) reg 0 sp
 ```
-
-![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 15 more pages - Personal - Microsoft​ Edge 5_4_2024 10_43_14 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/5f68425a-d435-408b-a322-a406c60645bc)
-
+<br><br><br><br><br><br><br><br><br><br><br><br>
+forgot image error 
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 - From the above image we can see that current address stored in `sp` is 0000003ffffffb40<sub>HEX</sub>
 - **Target memory address = (current address saved in sp + 8 = 0000003ffffffb48)**<sub>HEX</sub>
