@@ -180,6 +180,34 @@ To execute the ***3<sup>rd</sup>*** instruction again press `enter`. Then check 
 
 ### Instruction - 04
 
+```
+li      a1,8
+```
+
+The  ***4<sup>th</sup>*** instruction involves `reg a1`, so to check its value before the execution of ***4<sup>th</sup>*** instruction use,
+
+```
+(spike) reg 0 a1
+```
+
+To execute the ***4<sup>th</sup>*** instruction again press `enter`. Then check the value of `reg a2` using 
+
+```
+(spike) reg 0 a1
+```
+
+<br>
+
+|  Value of `reg a1` before the execution of ***4<sup>th</sup>*** instruction   |  Value of `reg a1` after the execution of ***4<sup>th</sup>*** instruction |
+|:-------------------------:|:-------------------------:|
+| ![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 6_06_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/16bb32dd-8574-4d3e-8bd9-981ebff49ddb)|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 6_07_03 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2439a5e9-0bbc-4642-b624-d1f46e4db5a5)|
+
+<br>
+
+
+
+
+
 
 
 
