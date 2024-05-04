@@ -272,16 +272,21 @@ Press `enter` again to execute the instruction.
 - `sd` stands for "store double word" and is used to store a 64-bit (double word) value into memory.
 - `sd ra, 8(sp)` is used to store the value of a `register ra` into memory at a specific address calculated as the sum of the `stack pointer sp` and an offset of 8
 - This is a `S-type instruction`
+  
 <br>
 <br>
 
 ### Instruction - 07
 
 ```
-jal     104cc <printf>
+jal   pc + 0x3b8
 ```
 
-The  ***7<sup>th</sup>*** instruction involves involves storing the value of the return address `register ra` at the memory address calculated as the sum of the stack pointer `sp` and an offset of `8` that is (sp + 8).
+The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, data stored in `pc (program counter)` can be viewed using,
+
+```
+esfsewfeawgverg
+```
 
 
 
