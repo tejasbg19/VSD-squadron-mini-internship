@@ -109,23 +109,39 @@ It is also important to observe that value of `reg a0` is `0x0000000000000001` w
 As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format as I have used **`-march=rv64imac`** target architecture flag while compilation of the program instead of **`Standard Base Interger `** **`rv64i`** ISA. "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
 <br>
 
-The next instruction involves `sp(stack pointer)` so let us check its value before running the ***2<sup>nd</sup>*** instruction.
+
+### Instruction - 02
+
+
+```
+ addi    sp,sp,-16
+```
+
+The above instruction involves `sp(stack pointer)` so let us check its value before running/executing it, using 
+
 ```
 (spike) reg 0 sp
 ```
-![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_16_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/eaacb1e6-fd49-4617-9a87-d7f8983daebe)
-The `sp` currently holds the value `3ffffffb50`. 
+
+To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check the `sp` value of the execution of ***2<sup>nd</sup>*** instruction use,
+
+```
+(spike) reg 0 sp
+```
+
 <br>
 
-To execute the ***2<sup>nd</sup>*** instruction again press `enter`.
-![Photos 5_3_2024 9_55_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7d840e7c-e9fb-4647-9a5d-35da785466c4)
+|  Value of `sp` before the execution of 2<sup>nd</sup> instruction   |  Value of `sp` after the execution of 2<sup>nd</sup> instruction  |
+|:-------------------------:|:-------------------------:|
+| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_16_32 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/eaacb1e6-fd49-4617-9a87-d7f8983daebe) |![Photos 5_3_2024 9_55_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/7d840e7c-e9fb-4647-9a5d-35da785466c4)|
+
+<br>
+
+The `sp` previously held the value `3ffffffb50`. 
 
 The instruction `c.addi sp, -16` is a compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
 <br>
-To view the modified `sp` value of execution of `c.addi sp, -16` use below instruction.
-```
-(spike) reg 0 sp
-```
+
 ![RV_D1SK2_L3_spikeSimulationAndDebug mp4 - OneDrive and 19 more pages - Personal - Microsoft​ Edge 5_3_2024 10_39_23 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a48e86e2-31d3-4ba8-add3-6762ebb37f93)
 
 <br> 
