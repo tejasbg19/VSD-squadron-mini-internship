@@ -269,7 +269,19 @@ Press `enter` again to execute the instruction.
 |:-------------------------:|:-------------------------:|
 |![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 6_31_47 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/e80ea9cc-66be-4b6b-a7f8-1324bdc949ac)|![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 17 more pages - Personal - Microsoft​ Edge 5_4_2024 6_56_29 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/b2a166c5-613c-4793-83e7-028389aedd05)|
 
+- `sd` stands for "store double word" and is used to store a 64-bit (double word) value into memory.
+- `sd ra, 8(sp)` is used to store the value of a `register ra` into memory at a specific address calculated as the sum of the `stack pointer sp` and an offset of 8
+- This is a `S-type instruction`
 <br>
+<br>
+
+### Instruction - 07
+
+```
+jal     104cc <printf>
+```
+
+The  ***7<sup>th</sup>*** instruction involves involves storing the value of the return address `register ra` at the memory address calculated as the sum of the stack pointer `sp` and an offset of `8` that is (sp + 8).
 
 
 
