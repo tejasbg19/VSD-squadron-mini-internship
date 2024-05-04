@@ -289,9 +289,21 @@ The  ***7<sup>th</sup>*** instruction involves jumping to address `pc + 0x3b8`, 
 |![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 9_54_12 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1ddb6e4c-7ce7-4f57-84da-0df98a511666)|![trial 20  Running  - Oracle VM VirtualBox 5_4_2024 9_58_15 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/fa13dcdd-121a-4d43-a9fa-7c69f5943468)|
 
 - This instruction performs an unconditional jump to a target address.
-- ***Target address = (current address saved in pc + 3b8 = 104cc)<sub>HEX</sub>***
-- From the image on RHS we can see that this instruction essentially transfers the program control from `main()` function to `print` function.
-- This is a `J-type instruction`
+- **Target address = (current address saved in pc + 3b8 = 104cc)**<sub>HEX</sub>
+- From the image on the right-hand side (RHS), we can see that this instruction essentially transfers program control from the `main()` function to the `print` function.
+- Before the control is transferred to the `print` function, the address of the next instruction after the jump statement (`10118` in hexadecimal) is stored in the `linkage register`, ensuring that control returns to the normal flow of `main()` after the `print` function completes its instructions.
+- This is a J-type instruction.
+
+<br>
+<br>
+
+### Instruction - 08
+
+```
+ld      ra,8(sp)
+```
+
+The  ***8<sup>th</sup>*** instruction involves loading the contents from the target memory address.
 
 
 
