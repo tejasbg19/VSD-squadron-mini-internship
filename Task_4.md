@@ -104,7 +104,7 @@ To run the ***1<sup>st</sup>*** instruction, just press `enter`. After running t
 It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
 <br>As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`. Also the `c.` in my instructions just indicates that the instruction is in  compressed format as I have used **`-march=rv64imac`** target architecture flag while compilation of the program instead of **`Standard Base Interger `** **`rv64i`** ISA. "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
 <br>
-
+<br>
 
 ### Instruction - 02
 
