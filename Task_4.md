@@ -105,6 +105,7 @@ To run the ***1<sup>st</sup>*** instruction, just press `enter`. After running t
 - As we can see the content of a0 has been modified as per the instruction `c.lui     a0,0x19` which dictates to load load upper immediate value **(19)<sub>16</sub>** to the upper bits of `register a0`.
 - Also the `c.` in my instructions just indicates that the instruction is in  compressed format as I have used **`-march=rv64imac`** target architecture flag while compilation of the program instead of **`Standard Base Interger `** **`rv64i`** ISA.
 - "0x19" is a hexadecimal value. The `0x` prefix signifies that the following number is in hexadecimal notation.
+- This is a `I-type instruction`.
 
 <br>
 <br>
@@ -139,6 +140,8 @@ To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check th
 - The `sp` previously held the value `3ffffffb50`.
 - The instruction `c.addi sp, -16` is a compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
 - **(16)<sub>10</sub> = (10)<sub>16</sub>**, `sp` value before exceution of `c.addi sp, -16` was **3ffffffb50** & we know that **(3ffffffb50 - 10 = 3ffffffb40)<sub>16</sub>**
+- This is a `I-type instruction`.
+
 <br>
 <br>
 
@@ -150,28 +153,29 @@ The  ***3<sup>rd</sup>*** instructions involves `reg a2`, so to check its value 
 ```
 (spike) reg 0 a2
 ```
-To execute the ***2<sup>nd</sup>*** instruction again press `enter`. Then check the value of `reg a2` using 
+To execute the ***3<sup>rd</sup>*** instruction again press `enter`. Then check the value of `reg a2` using 
 
 ```
 (spike) reg 0 a2
 ```
 
-|  Value of `sp` before the execution of 2<sup>nd</sup> instruction   |  Value of `sp` after the execution of 2<sup>nd</sup> instruction  |
+<br>
+
+|  Value of `reg a2` before the execution of 3<sup>rd</sup> instruction   |  Value of `reg a2` after the execution of 3<sup>rd</sup> instruction  |
 |:-------------------------:|:-------------------------:|
-| ![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2d23f473-8cad-4dca-a843-a7e46d0508c6)
-|![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_15_21 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9afb6df2-5308-416c-95cc-7c65dc710c62)|
-
-
-The `register a2` stores `0000000000000000` before the exceution of the ***3<sup>rd</sup>*** instruction of `main()`.
+| ![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2d23f473-8cad-4dca-a843-a7e46d0508c6)|![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 10_15_21 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9afb6df2-5308-416c-95cc-7c65dc710c62)|
 
 <br>
 
-Press `enter` to exceute the  ***3<sup>rd</sup>*** instruction. & check the value held in ` reg a2` after the execution of ***3<sup>rd</sup>*** instruction.
+- The `register a2` stores `0000000000000000` before the exceution of the ***3<sup>rd</sup>*** instruction of `main()`.
+- The instruction `li a2, 36` sets the value of register a2 to decimal 36 (0x24 in hexadecimal).
+-  `li` stands for `load immidiate`.
+-  This is a  `I-type instruction`. 
 
+<br>
+<br>
 
-
-The instruction `li a2, 36` sets the value of register a2 to decimal 36 (0x24 in hexadecimal). `li` stands for `load immidiate` and is a `I-type instruction`. 
-
+### Instruction - 04
 
 
 
