@@ -325,7 +325,7 @@ The  ***8<sup>th</sup>*** instruction involves loading the contents from the tar
 
 <br>
 <br>
-Just as shown in abobe illustrations we can debug each and every line of our `.o` file using `spike` and analyse the execution of the same. 
+Just as shown in above illustrations we can debug each and every line of our `.o` file using `spike` and analyse the execution of the same. 
 
 <!-- 
 ### Instruction - 09
@@ -346,7 +346,7 @@ Then press`enter` to execute the instruction, after which use the same code to v
 
 This is a comment -->
 
-
+<br><br>
 
 To **QUIT** `spike`, simply press `q` followed by `enter`. If you happen to miss noting down the value of a `register` or `sp` before running an instruction, you can always quit `spike` and rerun it in debug mode. Instead of providing the first instruction address for `main()`, you can input the address one step earlier than the instruction whose register value you wish to examine before executing that specific instruction.
 
