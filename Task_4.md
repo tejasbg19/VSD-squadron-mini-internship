@@ -73,7 +73,7 @@ To instruct spike to execute instructions until main(), we command spike to run 
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_36 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9f62de1b-ad6f-4a80-998f-b3fbb90fed66)
 
 <br>
-
+<br>
  
  ### Instruction - 01
 
@@ -133,19 +133,16 @@ To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check th
 
 <br>
 
-The `sp` previously held the value `3ffffffb50`. 
-
-The instruction `c.addi sp, -16` is a compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
+- The `sp` previously held the value `3ffffffb50`.
+- The instruction `c.addi sp, -16` is a compressed instruction set (rv64c) performs an addition of the immediate value **(-16)<sub>10</sub>** to the `stack pointer (sp)`, which in a nutshell subracts decimal 16 from `stack pointers` current value. 
+- **(16)<sub>10</sub> = (10)<sub>16</sub>**, `sp` value before exceution of `c.addi sp, -16` was **3ffffffb50** & we know that **(3ffffffb50 - 10 = 3ffffffb40)<sub>16</sub>**
 <br>
-
-**(16)<sub>10</sub> = (10)<sub>16</sub>**, `sp` value before exceution of `c.addi sp, -16` was **3ffffffb50** & we know that **(3ffffffb50 - 10 = 3ffffffb40)<sub>16</sub>**
-
 <br>
 
 ### Instruction - 03
 
 
-The  ***3<sup>rd</sup>*** instructions involves `reg a0`, so let us check its value before the execution.
+The  ***3<sup>rd</sup>*** instructions involves `reg a2`, so let us check its value before the execution.
 
 ```
 (spike) reg 0 a2
