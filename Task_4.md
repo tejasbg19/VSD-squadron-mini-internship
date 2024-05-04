@@ -63,7 +63,7 @@ From the above image the riscv instructions present in `main()` are
 ## Analysing Each Instruction:
 
 
-To instruct the spike to exceute the instructions until `main()` we can give the command 
+To instruct spike to execute instructions until main(), we command spike to run until the address of the first instruction in our main() function as shown below.
 
 
 ```
@@ -73,29 +73,39 @@ To instruct the spike to exceute the instructions until `main()` we can give the
 ```
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 8_08_36 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/9f62de1b-ad6f-4a80-998f-b3fbb90fed66)
 
-
 <br>
 
+ 
+ ### Instruction - 01
+
+
+```
+c.lui     a0,0x19
+```
 
 To know the value stored in `a0` register before the execution of first instruction we use the below command 
-
 
 ```
 (spike) reg 0 a0
 ```
 
-![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_18_26 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f0911bb3-0c9e-4a62-ac4b-e4a8c3903bd5)
+To run the ***1<sup>st</sup>*** instruction, just press `enter`. After running the first instruction, let us check the content of `register a0` again using `reg 0 a0`.
+
+
+|  Value of `reg a0` before the execution of 1<sup>st</sup> instruction   |  Value of `reg a0` after the execution of 1<sup>st</sup> instruction  |
+|:-------------------------:|:-------------------------:|
+| ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_18_26 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f0911bb3-0c9e-4a62-ac4b-e4a8c3903bd5) |  ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_31_04 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2a46a565-f7b9-42c9-8be2-d56e7831a33e) |
 
 <br>
 
-To run the ***1<sup>st</sup>*** instruction, just press `enter`. It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
+It is also important to observe that value of `reg a0` is `0x0000000000000001` where each of the 16 positions is a 4bit data hence, we can confirm that the program is compiled into `64-bit riscv oject file` as **16*4 = 64**. 
 
 
-![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_31_04 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/2a46a565-f7b9-42c9-8be2-d56e7831a33e)
+
 
 <br>
 
-After running the first instruction, let us check the content of `register a0` again using `reg 0 a0`.
+
 ![trial 20  Running  - Oracle VM VirtualBox 5_3_2024 9_35_34 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/47631035-7e9c-4fe3-8f3f-87bd4ecfd9ee)
 <br>
 
