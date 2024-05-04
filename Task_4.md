@@ -1,4 +1,4 @@
-![Editing VSD-squadron-mini-internship_Task_4 md at main · tejasbg19_VSD-squadron-mini-internship and 18 more pages - Personal - Microsoft​ Edge 5_3_2024 10_46_16 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/42114938-1308-4728-b082-20696b2a7a39)
+
 # Task-3: Verifying Outputs of `gcc` and `riscv64` Compiled Programs, Debugging `rv64imac` Compiled Assembly Object File Instruction by Instruction
 
 
