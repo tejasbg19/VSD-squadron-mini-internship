@@ -147,8 +147,11 @@ To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check th
 
 ### Instruction - 03
 
+```
+ li      a2,36
+```
 
-The  ***3<sup>rd</sup>*** instructions involves `reg a2`, so to check its value before the execution of ***3<sup>rd</sup>*** instruction use,
+The  ***3<sup>rd</sup>*** instruction involves `reg a2`, so to check its value before the execution of ***3<sup>rd</sup>*** instruction use,
 
 ```
 (spike) reg 0 a2
