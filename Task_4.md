@@ -315,9 +315,6 @@ The  ***8<sup>th</sup>*** instruction involves loading the contents from the tar
 ```
 (spike) reg 0 sp
 ```
-<br><br><br><br><br><br><br><br><br><br><br><br>
-forgot image error 
-<br><br><br><br><br><br><br><br><br><br><br><br>
 
 - From the above image we can see that current address stored in `sp` is 0000003ffffffb40<sub>HEX</sub>
 - **Target memory address = (current address saved in sp + 8 = 0000003ffffffb48)**<sub>HEX</sub>
