@@ -84,7 +84,7 @@ To instruct spike to execute instructions until main(), we command spike to run 
 c.lui     a0,0x19
 ```
 
-To know the value stored in `a0` register before the execution of first instruction we use the below command 
+The ***1<sup>st</sup>*** instruction involves loading a immidiate value to the upper half bits of `reg a0`, to know the value stored in `a0` register before the execution of first instruction we use the below command 
 
 ```
 (spike) reg 0 a0
@@ -119,7 +119,7 @@ To run the ***1<sup>st</sup>*** instruction, just press `enter`. After running t
  addi    sp,sp,-16
 ```
 
-The above instruction involves `sp(stack pointer)` so let us check its value before running/executing it, using 
+The above instruction involves adding an immidiate value to `sp(stack pointer)` so let us check its value before running/executing it, using 
 
 ```
 (spike) reg 0 sp
@@ -153,7 +153,7 @@ To execute the ***2<sup>nd</sup>*** instruction again press `enter`. To check th
  li      a2,36
 ```
 
-The  ***3<sup>rd</sup>*** instruction involves `reg a2`, so to check its value before the execution of ***3<sup>rd</sup>*** instruction use,
+The  ***3<sup>rd</sup>*** instruction involves loading an immidiate value to `reg a2`, so to check its value before the execution of ***3<sup>rd</sup>*** instruction use,
 
 ```
 (spike) reg 0 a2
@@ -186,7 +186,7 @@ To execute the ***3<sup>rd</sup>*** instruction again press `enter`. Then check 
 li      a1,8
 ```
 
-The  ***4<sup>th</sup>*** instruction involves `reg a1`, so to check its value before the execution of ***4<sup>th</sup>*** instruction use,
+The  ***4<sup>th</sup>*** instruction too involves loading an immidiate value into `reg a1`, so to check its value before the execution of ***4<sup>th</sup>*** instruction use,
 
 ```
 (spike) reg 0 a1
@@ -220,7 +220,7 @@ To execute the ***4<sup>th</sup>*** instruction again press `enter`. Then check 
  addi    a0,a0,896 
 ```
 
-The  ***5<sup>th</sup>*** instruction involves `reg a0`, so to check its value before the execution of ***5<sup>th</sup>*** instruction use,
+The  ***5<sup>th</sup>*** instruction involves adding an immidiate value to `reg a0`, so to check its value before the execution of ***5<sup>th</sup>*** instruction use,
 
 ```
 (spike) reg 0 a0
