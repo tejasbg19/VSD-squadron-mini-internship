@@ -3,7 +3,7 @@
 
 ## The RTL Code:
 
-The RTL code for our hardware which needs to be tested & simulated is below:
+The RTL code for our hardware which needs to be tested & simulated is taken from [here](https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i.v) & is below:
 
 ```
 module iiitb_rv32i(clk,RN,NPC,WB_OUT);
