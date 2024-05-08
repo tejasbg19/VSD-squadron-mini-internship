@@ -342,7 +342,7 @@ endmodule
 
 ## The Test Bench 
 
-We will be using the below testbench to verify the functionality of the above `Verilog` code is below:
+We will be using the below testbench to verify the functionality of the above `Verilog` code is taken from this [repo] (https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i_tb.v) below:
 
 ```
 module iiitb_rv32i_tb;
