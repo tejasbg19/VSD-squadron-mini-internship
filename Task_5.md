@@ -359,8 +359,11 @@ initial begin
 RN  = 1'b1;
 clk = 1'b1;
 
-$dumpfile ("iiitb_rv32i.vcd"); //by default vcd
-$dumpvars (0, iiitb_rv32i_tb);
+$dumpfile("iiitb_rv32i.vcd");
+$dumpvars(0, iiitb_rv32i_tb.clk, iiitb_rv32i_tb.RN, iiitb_rv32i_tb.WB_OUT, iiitb_rv32i_tb.NPC,
+               iiitb_rv32i_tb.rv32.ID_EX_A, iiitb_rv32i_tb.rv32.ID_EX_B,
+               iiitb_rv32i_tb.rv32.ID_EX_IR, iiitb_rv32i_tb.rv32.ID_EX_RD);
+  
   
   #5 RN = 1'b0;
   
