@@ -384,6 +384,8 @@ Saving the testbench.
 <br>
 We will be using `iverilog` to compile our RTL & `gtkwave` which we downloaded in task-1to view the waveforms. To simulate the RTL through our testbench & view the waveform, 
 follow the below instructions.
+
+
 ```
 $ iverilog -o name_for_waveform RTL_code_filename.v Testbench_name.v
 $ vvp output name_for_waveform
