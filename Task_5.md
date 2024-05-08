@@ -3,7 +3,7 @@
 
 ## The RTL Code:
 
-The RTL code for our hardware which needs to be tested & simulated is taken from [here](https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i.v) & is below:
+The RTL code for our hardware which needs to be tested & simulated is taken from [here](https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i.v) 
 
 ```
 module iiitb_rv32i(clk,RN,NPC,WB_OUT);
@@ -342,7 +342,7 @@ endmodule
 
 ## The Test Bench 
 
-We will be using the below testbench to verify the functionality of the above `Verilog` code is taken from this [repo] (https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i_tb.v) below:
+We will be using the below testbench to verify the functionality of the above `Verilog` code is taken from this [repo] (https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i_tb.v) :
 
 ```
 module iiitb_rv32i_tb;
