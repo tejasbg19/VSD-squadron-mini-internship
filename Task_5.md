@@ -400,6 +400,26 @@ $ gtkwave iiitb_rv32i.vcd
 
 ## The Waveforms 
 
-It is important to note that the riscv instructions are hardcodded in verilog & are not the same even tough they perform same functions. Also "hardcoded" simply means that the behavior of each instruction is explicitly defined in the Verilog code. 
+It is important to note that the riscv instructions are hardcodded in verilog & are not the same even tough they perform same functions. Also "hardcoded" simply means that the behavior of each instruction is explicitly defined in the Verilog code. <br>
+Double click on the signals which needed to be added to the waveform.
 
+![trial 20  Running  - Oracle VM VirtualBox 5_8_2024 11_36_36 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/21da9ef5-8cf4-4251-91ab-e56a848d7b31)
+
+
+
+#### Instruction_1 
+
+```
+add r6,r2,r1
+```
+
+![trial 20  Running  - Oracle VM VirtualBox 5_8_2024 11_51_42 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/3f37efcb-213a-46c9-816b-eb96bf87b089)
+
+
+
+#### Instruction_2 
+
+```
+sub r7,r1,r2
+```
 
