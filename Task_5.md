@@ -342,7 +342,7 @@ endmodule
 
 ## The Test Bench 
 
-We will be using the below testbench to verify the functionality of the above `Verilog` code is taken from this [repo](https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i_tb.v) :
+We will be using the below testbench to verify the functionality of the above `Verilog` code & Verify the execution of instructions we analysed in task-02 is taken from this [repo](https://github.com/vinayrayapati/rv32i/blob/main/iiitb_rv32i_tb.v) :
 
 ```
 module iiitb_rv32i_tb;
@@ -396,5 +396,10 @@ $ gtkwave iiitb_rv32i.vcd
 ```
 
 ![trial 20  Running  - Oracle VM VirtualBox 5_8_2024 4_14_41 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/1b11b8e6-36d8-491c-822a-df311354c134)
+
+
+## The Waveforms 
+
+It is important to note that the riscv instructions are hardcodded in verilog & are not the same even tough they perform same functions. Also "hardcoded" simply means that the behavior of each instruction is explicitly defined in the Verilog code. 
 
 
