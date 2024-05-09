@@ -423,3 +423,43 @@ add r6,r2,r1
 sub r7,r1,r2
 ```
 
+![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 5_05_17 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/103b0848-d233-40d9-ab6d-64d402eadfb1)
+
+
+
+#### Instruction_3 
+
+```
+and r8,r1,r3
+```
+
+![Captures 5_9_2024 5_08_22 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/0b59201f-a819-4608-b403-71b4f3eb5d9a)
+
+
+
+#### Instruction_4
+
+```
+or r9,r2,r5
+```
+
+![Photos 5_9_2024 5_09_34 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/c606cd3a-b388-46a1-a3ca-0b5df0b83de5)
+
+
+
+#### Instruction_5
+
+```
+xor r10,r1,r4
+```
+
+![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 5_10_43 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f7ff7988-5ef3-43b8-9cde-9836f5f53f0a)
+
+
+
+#### Instruction_6
+
+```
+slt r11,r2,r4
+```
+
