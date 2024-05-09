@@ -463,3 +463,25 @@ xor r10,r1,r4
 slt r11,r2,r4
 ```
 
+![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 5_15_11 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/a69e79ac-02cf-405c-95b2-b511f11f51a4)
+
+
+
+#### Instruction_7
+
+```
+addi r12,r4,5
+```
+
+![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 5_16_30 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/118d3932-45d5-4b13-b025-7140a50b5cac)
+
+
+
+#### Instruction_8
+
+```
+sw r3,r1,2
+```
+
+![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 5_18_11 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/708b606e-11f6-4ab5-a62f-0c7481ac47fb)
+
