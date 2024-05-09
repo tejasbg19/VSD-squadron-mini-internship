@@ -19,5 +19,12 @@
 
 ## Task_4
 
-**Task-4** Compile the `c program` `gcc` & `riscv compiler` & verifying their outputs. As well as use `spike` to debug the riscv64 assembly instructions and analyse them. 
+**Task-4** is to Compile the `c program` `gcc` & `riscv compiler` & verifying their outputs. As well as use `spike` to debug the riscv64 assembly instructions and analyse them. 
 [Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_4.md) to view more.
+
+
+## Task_5
+
+**Task-5** is to do a functional verification of our hardware through the `verilog` code & testbench provided.
+[Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_5.md) to view more.
+
