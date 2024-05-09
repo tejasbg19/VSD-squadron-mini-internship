@@ -518,6 +518,15 @@ bne r0,r1,20
 #### Instruction_12
 
 ```
-addi r12,r4,5
+sll r15,r1,r2(2)
 ```
 
+![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 6_20_54 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/16ba7f06-c790-4a20-b254-521be35e5107)
+
+<--!
+#### Instruction_13
+
+```
+srl r16,r14,r2(2)
+```
+!-->
