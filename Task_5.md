@@ -523,10 +523,14 @@ sll r15,r1,r2(2)
 
 ![trial 20  Running  - Oracle VM VirtualBox 5_9_2024 6_20_54 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/16ba7f06-c790-4a20-b254-521be35e5107)
 
-<--!
+<!--
 #### Instruction_13
 
 ```
 srl r16,r14,r2(2)
 ```
-!-->
+-->
+
+#### Output Waveform Of All The Instructions
+
+![Photos 5_9_2024 6_24_10 PM](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/897bcc34-a3ac-4d23-8348-2a4b42df3f46)
