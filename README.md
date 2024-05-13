@@ -31,8 +31,8 @@
 
 ## Task_6
 
-**Task-6** is to test the working of the VSD Mini Squadron Board, for that I have designed a Centade BCD Counter 
-[Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_6.md) to view more.
+**Task-6** involves testing the functionality of the VSD Mini Squadron Board. For this purpose, I have designed a Centade BCD Counter. 
+[Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_6.md) to view more details.
 
 
 <br>
