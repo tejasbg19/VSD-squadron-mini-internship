@@ -28,3 +28,8 @@
 **Task-5** is to do a functional verification of our hardware through the `verilog` code & testbench provided.
 [Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_5.md) to view more.
 
+
+## Task_6
+
+**Task-6** is to test the working of the VSD Mini Squadron Board, for that I have designed a Centade BCD Counter 
+[Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_6.md) to view more.
