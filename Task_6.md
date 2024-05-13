@@ -123,9 +123,9 @@ int main(void) {
 
 ### Working & Demo Video 
 
-
 The board is programmed to continuously monitor the voltage/state at port `PD1`. Upon detecting a negedge, which is the transition of voltage from 3.3v to 0v, it will increment the counter to the next state. This can be observed in the below video.
 
 <br>
 
-[Click here to for the demo video](https://drive.google.com/file/d/1USiex3T72yH7bC60LAuBVj_oXlc_r6ls/view?usp=sharing){:target="_blank"}
+<a href="https://drive.google.com/file/d/1USiex3T72yH7bC60LAuBVj_oXlc_r6ls/view?usp=sharing" target="_blank">Click here for the demo video</a>
+
