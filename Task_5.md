@@ -1,4 +1,4 @@
-# Task-3: Functional Simulation Of Processor Using The Given Testbench & Analysing The Thus Obtained Waveform
+# Task-5: Functional Simulation Of Processor Using The Given Testbench & Analysing The Thus Obtained Waveform
 
 
 ## The RTL Code:
