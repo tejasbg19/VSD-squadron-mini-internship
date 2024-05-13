@@ -127,5 +127,6 @@ The board is programmed to continuously monitor the voltage/state at port `PD1`.
 
 <br>
 
-<a href="https://drive.google.com/file/d/1USiex3T72yH7bC60LAuBVj_oXlc_r6ls/view?usp=sharing" target="_blank">Click here for the demo video</a>
+<a href="https://drive.google.com/file/d/1USiex3T72yH7bC60LAuBVj_oXlc_r6ls/view?usp=sharing" onclick="window.open(this.href, '_blank'); return false;">Click here for the demo video</a>
+
 
