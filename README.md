@@ -33,3 +33,10 @@
 
 **Task-6** is to test the working of the VSD Mini Squadron Board, for that I have designed a Centade BCD Counter 
 [Click here](https://github.com/tejasbg19/VSD-squadron-mini-internship/blob/main/Task_6.md) to view more.
+
+
+This Repo was Created & Uptaded by:
+
+Name: **Tejas B G**  <br>
+College : **Dayananda Sagar Academy Of Technology & Management** <br>
+Email Id: **tejasbg13rvpu@gmail.com**
