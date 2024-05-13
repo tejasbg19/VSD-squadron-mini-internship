@@ -23,6 +23,7 @@ Counters are fundamental components in digital electronics that are used to coun
 
 - VSD Mini Squadron Board
 - 8 LEDs ( 4 Blue & 4 Red )
+- Eight 220 ohm Resistors 
 - Push button switch
 - Jumper cables
 - Bread board
@@ -31,6 +32,11 @@ Counters are fundamental components in digital electronics that are used to coun
 
 ### Hardware Connections
 
-![BOARD2](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f6dff4e9-3d20-4b2d-b77f-a26cac2732bc)
+![bboard](https://github.com/tejasbg19/VSD-squadron-mini-internship/assets/163899793/f71ed023-2e25-4544-b357-91ea77e5aa35)
 
 
+As we can see from the above image, 
+
+- A push button which act as `trigger` is connected between **`GND`** & **`PD1`**.
+- All the 8 LEDs have a common **`GND`** & each of their Anode is connected to a 220 ohms resistors.
+- Ports `PC0` to `PC3` forms the `unit` digit & are connected to their respective LEDs with `PC0` being **LSB (Least Significant Bit)** & `PC3` being **MSB (Most Significant Bit)**
